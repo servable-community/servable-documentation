@@ -127,6 +127,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      metadata: [{ name: 'servable-parse', content: 'servable, parse-server, nodejs' }],
     }),
 };
 
