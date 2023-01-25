@@ -4,18 +4,16 @@ sidebar_position: 1
 
 # What is Servable 
 
+**Servable for [Parse Server](https://docs.parseplatform.org)** is a Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy and scalable template to get the best of Parse Server and protocols.
 
-Let's discover **Servable in less than 5 minutes**.
-## A Node JS framework
-Servable is a Node JS framework that speeds up and streamlines server development.
-# Concept
-## What is Servable
-Servable is a Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy and scalable template to get the best of Parse Server and the protocols.
+Servable at its core is a server template that uses the servable-engine to orchestrate the different protocols in the application. Servable streamlines the server development by separating every "groupable" behaviour to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package. By doing so, Servable enforces the best SOLID and Domain Driven Design principles right away.
 
+Main features:
+- Quick start and Plug & Play Node JS framework
+- Run protocols
 - Schema based classes and auto-migration 
 - Templates for classes 
-- Auto-binding with protocols
-- Template for custom protocols
+- Templates for custom protocols
 
 ## Why Servable?
 At @anak we created the protocols in our Node JS + Parse server project. What was an experience to ease the backend development quickly became a good practice that helped us keep a clean codebase. They worked so well we decided to streamline their integration with the code base for future projects. We were inspired by the powerful ways NextJs improved the React experience by providing an efficient template on top of it. Yet we did not want to hide the Parse Server framework behind ours as we truly love Parse. Servable allows to tap into all the existing and upcoming Parse features and yet it dramatically simplifies the development process. A well designed Servable project will comprise almost nothing more than the actual classes and business logic of the platform, other repetitive functions and behaviours will use existing protocols implemented by the community or entreprise-private protocols.
