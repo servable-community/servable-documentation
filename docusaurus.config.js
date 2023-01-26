@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/2452897.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -60,8 +60,8 @@ const config = {
         title: 'Servable for Parse Server',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/6966489.png', //https://www.iconfinder.com/icons/6488304/ant_bee_bug_insect_nature_pest_virus_icon
-          //src: 'img/2452897.png', //https://www.iconfinder.com/icons/2001645/animal_beaver_carnivore_mink_otter_weasel_wild_icon
+          // src: 'img/6966489.png', //https://www.iconfinder.com/icons/6488304/ant_bee_bug_insect_nature_pest_virus_icon
+          src: 'img/2452897.png', //https://www.iconfinder.com/icons/2001645/animal_beaver_carnivore_mink_otter_weasel_wild_icon
         },
         items: [
           {
