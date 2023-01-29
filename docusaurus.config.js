@@ -12,8 +12,10 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/2452897.png',
-
+  favicon: 'img/2452897.png', //https://icons8.com/icon/set/animals/plasticine
+  plugins: [
+    require.resolve('docusaurus-lunr-search')
+  ],
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
