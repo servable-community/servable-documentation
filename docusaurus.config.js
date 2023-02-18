@@ -16,6 +16,10 @@ const config = {
   plugins: [
     require.resolve('docusaurus-lunr-search')
   ],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
@@ -59,7 +63,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Servable for Parse Server',
+        title: 'Servable',
         logo: {
           alt: 'My Site Logo',
           // src: 'img/6966489.png', //https://www.iconfinder.com/icons/6488304/ant_bee_bug_insect_nature_pest_virus_icon
