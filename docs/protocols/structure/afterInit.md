@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # afterInit
 
-afterInit/index.js exports a default function that is called before the protocol is initialized.
+afterInit/index.js exports a default function that is called after the protocol is initialized.
 
 ## Arguments
 - app: the express app
