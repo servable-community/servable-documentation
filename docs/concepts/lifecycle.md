@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 # Lifecycle
+
 ```mermaid
 stateDiagram
     [*] --> beforeInit

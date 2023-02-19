@@ -16,6 +16,3 @@ We can do much better by creating a protocol called *commentable* that will be r
 - For reacting to object events, for example beforeSave, afterSave, beforeDelete, afterDelete and make sure the object is at all time coherent with the protocol rules
 
 By doing so we have packaged the ability to comment into one component that can be reused easily across the project.
-
-
-Protocol [lifecycle](/lifecycle).
