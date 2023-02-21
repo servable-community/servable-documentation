@@ -3,16 +3,21 @@ sidebar_position: 1
 ---
 
 # Configurations
-Let's say you have an e-commerce application that enables user comments on a blog page and on a product page. You would probably create a table in your database that holds the comments, with a foreign key to the user who made the comment. For performance reasons you would keep the comments count on the object that is being commented, alongside a reference to a "relevant" comment. You would add those fields to both the blog page table and the product page. Every change you would make the comments system design would have to be manually updated to those two tables.
+Servable launches with a given configuration. When you generate a new Servable project a list of configurations is provided in servable.engine.config.js.
 
+## Staging configuration
+:::warning
+This configuration is still experimental
+:::
+A staging configuration is helpful when you want to test a schema migration on a staging database without touching the production database. It is an extra protection you can put in your production code.
 
+```mermaid
+flowchart TD
+    start([Launch Servable]) --> requiresMigration{A protocol requires migration?} 
+    requiresMigration -- Yes --> migrate[Migrate every protocol that requires migration]
+    requiresMigration -- No --> doLaunch[Do Launch]
+    migrate --> doLaunch[Do Launch]
+```
 
-We can do much better by creating a protocol called *commentable* that will be responsible for:
-
-- Defining the schema and creating the tables needed for the comment feature, ie CommentableEntry
-- Adding the proper fields to every object that is *commentable*, we call them projected field, in this case they are named CommentableRelevantEntry, CommentableCount
-- The security and ACL for the CommentableEntry table and the fields 
-- For defining object level behaviour to its own object classes
-- For reacting to object events, for example beforeSave, afterSave, beforeDelete, afterDelete and make sure the object is at all time coherent with the protocol rules
-
-By doing so we have packaged the ability to comment into one component that can be reused easily across the project.
+## Production configuration
+A production configuration will handle the whole lifecycle of a Servable, including migrations, running it and exposing the API. 
