@@ -14,7 +14,18 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/2452897.png', //https://icons8.com/icon/set/animals/plasticine
   plugins: [
-    require.resolve('docusaurus-lunr-search')
+    require.resolve('docusaurus-lunr-search'),
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
   ],
   markdown: {
     mermaid: true,
