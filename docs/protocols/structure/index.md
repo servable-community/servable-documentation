@@ -25,7 +25,7 @@ Called when servable seeds default informations into the database
 ## [triggers](triggers)
 Defines triggers on classes that conform to this protocol
 
-## [liveClasses.js](liveClasses.js) 
+## [liveClasses.js](liveClasses) 
 Defines classes that will be accessible through live sockets
 
 ## [schema](schema) 

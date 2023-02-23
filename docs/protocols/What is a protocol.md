@@ -18,4 +18,4 @@ We can do much better by creating a protocol called *commentable* that will be r
 By doing so we have packaged the ability to comment into one component that can be reused easily across the project.
 
 
-Protocol [lifecycle](/lifecycle).
+Protocol [lifecycle](lifecycle).
