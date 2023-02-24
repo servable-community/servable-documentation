@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Docker compose
 
-Use this docker-compose file to start a local environment to use with you servable-parse
+Use this docker-compose file to start a local environment to use with you servable
 
 ```yaml
 version: "3.7"

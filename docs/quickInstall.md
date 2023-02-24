@@ -27,7 +27,7 @@ Launch a complete local infrastructure to support the servable.
 
 ## Generate a new server
 
-Generate a new servable-parse app by running the command:
+Generate a new servable app by running the command:
 
 ```bash
 yo servable-parse
@@ -35,9 +35,9 @@ yo servable-parse
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-You will be prompted to enter the basic informations needed to start a full fledged servable-parse.
+You will be prompted to enter the basic informations needed to start a full fledged servable.
 
-The command also installs all necessary dependencies you need to run servable-parse.
+The command also installs all necessary dependencies you need to run servable.
 
 ## Start your server
 

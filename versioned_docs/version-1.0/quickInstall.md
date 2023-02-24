@@ -27,7 +27,7 @@ Launch a complete local infrastructure to support the servable.
 
 ## Generate a new server
 
-Generate a new servable-parse app by running the command:
+Generate a new servable app by running the command:
 
 ```bash
 yo servable-parse
@@ -35,9 +35,9 @@ yo servable-parse
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-You will be prompted to enter the basic informations needed to start a full fledged servable-parse.
+You will be prompted to enter the basic informations needed to start a full fledged servable.
 
-The command also installs all necessary dependencies you need to run servable-parse.
+The command also installs all necessary dependencies you need to run servable.
 
 ## Start your server
 
@@ -48,6 +48,6 @@ cd my-app
 yarn start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created servable-parse app, you'll need to navigate the terminal there.
+The `cd` command changes the directory you're working with. In order to work with your newly created servable app, you'll need to navigate the terminal there.
 
 The `yarn start` command builds your app locally and serves it through a development server, ready for you to view at http://localhost:1391/.
