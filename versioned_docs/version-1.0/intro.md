@@ -38,18 +38,6 @@ Servable is likely a good fit for you if
 - You want to make that capacity available throughout your organization or publish it on the web
 - You are building a new platform from scratch but you don't want reinvent the wheel for the usual suspects: social interactions, versionning, data consistency over deletion 
 
-## Examples of protocols
-### Followable
-- Gives an object (followed) the capacity to be followed by another object (follower) 
-- keeps the number of followers up to date on the followed object
-- creates and maintains join tables with the status of the follow relationship
-
-### Emailable
-- Gives a ServableApp the capacity to use transactional emails via a simple API that is registered via the Servable.Mailing object
-- Keeps a list of email templates
-- Can be used with Sendgrid as of now
-
-
 **...you love Parse Server**
 There is no reason not to use Servable if you have previously used a Parse Server. 
 
