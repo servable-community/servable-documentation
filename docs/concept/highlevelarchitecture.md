@@ -1,8 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # High level architecture
+
+Servable orchestrates protocols and their respective classes.
 
 ## Components
 - An Express app

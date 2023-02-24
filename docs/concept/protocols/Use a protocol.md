@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Use a protocol
+# Declare a protocol
 A protocol applies to a class.
 You can add a protocol to the static protocols array.
 
@@ -85,10 +85,10 @@ export default class ServableApp extends Servable.App.Object {
             id: 'publishable',
             name: 'publishable',
             slug: 'ps',
-            // module: {
-            //     '@yelounak/publishable-parse-server': '*'
-            // },
-            // version: '*',
+            module: {
+                '@yelounak/publishable-parse-server': '*'
+            },
+            version: '*',
             params: {
                 liveClasses: ['publishable'],
                 schema: {
@@ -129,8 +129,7 @@ export default class ServableApp extends Servable.App.Object {
                 appName: process.env.PARSE_SERVER_APP_NAME
             }
         },
-        'faqable',
-        // 'videocustomable',        
+        'faqable',        
         'userproxyable',
         'addressable',
         'addresssocialable',

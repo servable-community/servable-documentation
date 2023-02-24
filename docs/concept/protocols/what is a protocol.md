@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 
 # What is a protocol?
+
+## A better way to group behaviour
 Let's say you have an e-commerce application that enables user comments on a blog page and on a product page. You would probably create a table in your database that holds the comments, with a foreign key to the user who made the comment. For performance reasons you would keep the comments count on the object that is being commented, alongside a reference to a "relevant" comment. You would add those fields to both the blog page table and the product page. Every change you would make the comments system design would have to be manually updated to those two tables.
-
-
 
 We can do much better by creating a protocol called *commentable* that will be responsible for:
 
@@ -17,5 +17,11 @@ We can do much better by creating a protocol called *commentable* that will be r
 
 By doing so we have packaged the ability to comment into one component that can be reused easily across the project.
 
-
-Protocol [lifecycle](lifecycle).
+## Lifecycle
+```mermaid
+stateDiagram
+    [*] --> beforeInit
+    beforeInit --> seed
+    seed --> afterInit
+    afterInit --> [*]
+```

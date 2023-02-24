@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# The servable-engine
+# servable-engine
 
 The servable engine is responsible for all the Servable related operations on a servable template project.
 
