@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Quick installation
+# Upgrading
 
 You can install Servable for Parse Server via **[Yeoman](https://yeoman.io)**.
 
