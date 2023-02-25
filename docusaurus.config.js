@@ -29,12 +29,33 @@ const config = {
         },
       };
     },
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "apiDocs",
+        docsPluginId: "classic",
+        config: {
+          petstore: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
+            specPath: "examples/petstore.yaml", // Path to designated spec file
+            outputDir: "api/petstore", // Output directory for generated .mdx docs
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          },
+          burgers: {
+            specPath: "examples/food/burgers/openapi.yaml",
+            outputDir: "api/food/burgers",
+          }
+        }
+      },
+    ]
   ],
   markdown: {
     mermaid: true,
   },
   themes: [
-    '@docusaurus/theme-mermaid'
+    '@docusaurus/theme-mermaid',
+    "docusaurus-theme-openapi-docs"
   ],
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
