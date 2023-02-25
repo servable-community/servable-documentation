@@ -6,7 +6,7 @@ sidebar_position: 1
 
 
 
-![logo](/img/anteaters.jpg)
+![logo](/img/swarm.svg)
 <!-- ![logo](/img/grasshopper.png) -->
 <!-- <img src="/img/2452897.png" alt="servable" style={{ width:'200px' }}/>
 <img src="/img/plus2.png" alt="plus" style={{ width:'50px', paddingBottom: 70, marginLeft: 30, marginRight: 30 }}/>
