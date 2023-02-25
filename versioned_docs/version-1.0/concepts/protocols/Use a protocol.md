@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Declare a protocol
+# Declaring a protocol
 A protocol applies to a class.
 You can add a protocol to the static protocols array.
 

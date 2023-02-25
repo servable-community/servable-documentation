@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Quick installation
+# Upgrading
 
 You can install Servable for Parse Server via **[Yeoman](https://yeoman.io)**.
 
@@ -48,6 +48,6 @@ cd my-app
 yarn start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created servable app, you'll need to navigate the terminal there.
+The `cd` command changes the directory you're working with. In order to work with your newly created servable-parse app, you'll need to navigate the terminal there.
 
 The `yarn start` command builds your app locally and serves it through a development server, ready for you to view at http://localhost:1391/.

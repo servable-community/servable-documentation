@@ -91,7 +91,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getStarted/intro',
             position: 'left',
             label: 'Documentation',
           },

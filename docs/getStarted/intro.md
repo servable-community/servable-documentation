@@ -49,7 +49,27 @@ Servable is likely a good fit for you if
 - Keeps a list of email templates
 - Can be used with Sendgrid as of now
 
+```mermaid
+erDiagram
+    ARTICLE ||--o{ COMMENTABLEENTRY : entries
+    ARTICLE {
+        string objectId
+        string name
+        string custNumber
+        string sector
+    }
+    COMMENTABLEENTRY ||--|{ LINE-ITEM : contains
+    COMMENTABLEENTRY {
+        string objectId
+        string value
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
 
+```
 **...you love Parse Server**
 There is no reason not to use Servable if you have previously used a Parse Server. 
 

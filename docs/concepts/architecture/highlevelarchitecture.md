@@ -4,7 +4,12 @@ sidebar_position: 1
 
 # High level architecture
 
-Servable orchestrates protocols and their respective classes.
+Servable is a template that helps orchestrate protocols and their respective classes during the entire lifecycle of a server.
+Servable is built on top of Parse Server with the intention to handle protocols along the features Parse Server already serves.
+
+Servable at its core is a structure that works hand in hand with the servable-engine which handles all the heavy lifting of registering protocols, computing classes, handling migrations and more.
+
+Servable can be launched using a configuration.
 
 ## Components
 - An Express app
