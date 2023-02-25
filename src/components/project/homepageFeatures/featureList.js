@@ -2,7 +2,7 @@ import React from 'react';
 
 export default [
   {
-    title: 'Make use of protocols',
+    title: 'Tailored for protocols',
     Svg: require('@site/static/img/ant.svg').default,
     description: (
       <>
@@ -24,7 +24,7 @@ export default [
     Svg: require('@site/static/img/swarm.svg').default,
     description: (
       <>
-        Extend your server by using protoocols made by the community.
+        Extend your server by using protoocols made by the community. Add emailing, versionning, or video capacity with one simple declaration. Handle schema migrations and rollbacks automatically.
       </>
     ),
   },

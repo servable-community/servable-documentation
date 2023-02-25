@@ -1,7 +1,7 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
-import LogoAnimated from '../logo/animated'
+// import LogoAnimated from '../logo/animated'
 import LogoStatic from '../logo/static'
 
 export default () => {

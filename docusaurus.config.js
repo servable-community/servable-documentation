@@ -162,6 +162,23 @@ const config = {
           //   ],
           // },
           {
+            title: 'Enterprise',
+            items: [
+              {
+                label: 'Professional support',
+                href: '#',
+              },
+              {
+                label: 'Use cases',
+                href: '#',
+              },
+              {
+                label: 'Pricing',
+                href: '#',
+              },
+            ],
+          },
+          {
             title: 'More',
             items: [
               {
@@ -175,7 +192,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} servable-parse, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} anak Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
