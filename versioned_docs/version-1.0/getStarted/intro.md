@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-
+:::warning
+Servable is still experimental and its api may change in the future.
+:::
 
 ![logo](/img/polar-bear-2.png)
 <!-- ![logo](/img/grasshopper.png) -->
@@ -13,11 +15,9 @@ sidebar_position: 1
 <img src="/img/grasshopper.png" alt="protocols" style={{ width:'200px' }}/> -->
 
 
-:::warning
-Servable is still experimental and its api may change in the future.
-:::
 
-**Servable for [Parse Server](https://docs.parseplatform.org)** is a Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.
+
+**Servable** is a Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.
 
 Servable at its core is a server template that uses the servable-engine to orchestrate the different protocols in the application. Servable streamlines the server development by separating every "groupable" behaviour to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package. By doing so, Servable enforces the best SOLID and Domain Driven Design principles right away.
 
@@ -78,6 +78,3 @@ Servable provides a predetermined template that sets a clear developer's guideli
 
 ## Servable in your stack
 Servable comes bundled with Parse Server that sets up a working set of tables that handle users, sessions and installation. You can use it to bootstrap your platform or as a microservice that you can access through REST or GraphQL without using the _User, Session and installation tables.
-
-## Architecture
-

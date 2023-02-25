@@ -1,12 +1,12 @@
 ---
 slug: first-blog-post
-title: First Blog Post
+title: To refactor or not
 authors:
-  name: Gao Wei
-  title: Docusaurus Core Team
-  url: https://github.com/wgao19
-  image_url: https://github.com/wgao19.png
-tags: [hola, docusaurus]
+  name: Aboubacar Doucoure
+  title: Creator of Servable
+  url: https://github.com/yelounak
+  image_url: https://github.com/yelounak.png
+tags: [servable, nodejs, parseserver]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet
+There comes a time in the life of every project, preferably in the beginning, when we need to refactor a lot of code that have introduced bugs, repetitions and debt along the way. 

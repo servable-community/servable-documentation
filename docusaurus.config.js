@@ -107,6 +107,7 @@ const config = {
         items: [
           {
             type: 'docsVersionDropdown',
+            position: 'right',
           },
           {
             type: 'doc',

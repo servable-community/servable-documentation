@@ -1,8 +1,8 @@
 endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+  name: Aboubacar Doucoure
+  title: Creator of Servable
+  url: https://github.com/yelounak
+  image_url: https://github.com/yelounak.png
 
 yangshun:
   name: Yangshun Tay
@@ -15,3 +15,9 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+
+aboubacar:
+  name: Aboubacar Doucoure
+  title: Creator of Servable
+  url: https://github.com/yelounak
+  image_url: https://github.com/yelounak.png
