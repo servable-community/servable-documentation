@@ -15,7 +15,7 @@ const config = {
   baseUrl: '/servable',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/2452897.png', //https://icons8.com/icon/set/animals/plasticine
+  favicon: 'img/favicon.ico', //https://icons8.com/icon/set/animals/plasticine
   plugins: [
     require.resolve('docusaurus-lunr-search'),
     async function myPlugin(context, options) {
@@ -83,7 +83,7 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           // src: 'img/6966489.png', //https://www.iconfinder.com/icons/6488304/ant_bee_bug_insect_nature_pest_virus_icon
-          src: 'img/2452897.png', //https://www.iconfinder.com/icons/2001645/animal_beaver_carnivore_mink_otter_weasel_wild_icon
+          src: 'img/polar-bear.png', //https://www.iconfinder.com/icons/2001645/animal_beaver_carnivore_mink_otter_weasel_wild_icon
         },
         items: [
           {
