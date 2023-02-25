@@ -113,7 +113,7 @@ const config = {
             type: 'doc',
             docId: 'getStarted/intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Guides',
           },
           // {
           //   type: 'doc',
@@ -139,7 +139,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Documentation',
+                label: 'Guides',
                 to: '/docs/getstarted/intro',
               },
             ],
