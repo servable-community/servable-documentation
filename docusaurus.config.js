@@ -95,16 +95,14 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: 'Servable',
         logo: {
-          alt: 'My Site Logo',
-          // src: 'img/6966489.png', //https://www.iconfinder.com/icons/6488304/ant_bee_bug_insect_nature_pest_virus_icon
-          src: 'img/polar-bear.png', //https://www.iconfinder.com/icons/2001645/animal_beaver_carnivore_mink_otter_weasel_wild_icon
+          alt: 'Logo',
+          src: 'img/polar-bear.png',
         },
         items: [
           {
@@ -127,8 +125,9 @@ const config = {
           },
           {
             href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
@@ -140,7 +139,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/getStarted/intro',
+                to: '/docs/getstarted/intro',
               },
             ],
           },
@@ -185,10 +184,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/yelounak/servable-parse',
-              },
+              // {
+              //   label: 'GitHub',
+              //   href: 'https://github.com/yelounak/servable-parse',
+              // },
             ],
           },
         ],
