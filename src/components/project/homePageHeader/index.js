@@ -10,9 +10,9 @@ export default () => {
     <header>
       <div className={`
         bg-gradient-to-r         
-        from-indigo-600 
-        via-purple-500 
-        to-pink-300 
+        from-[#FAF3DD]
+        via-[#656985]
+        to-[#656985]
         bg-opacity-20
         min-h-[500px]`}>
         <div class={`
@@ -42,8 +42,8 @@ export default () => {
           text-left
           pt-12              
         `}>
-              <h1 className='text-7xl'>{siteConfig.title}</h1>
-              <p className={`font-bold text-lg`}>
+              <h1 className='text-7xl text-[#FAF3DD]'>{siteConfig.title}</h1>
+              <p className={`font-bold text-lg text-[#FAF3DD]`}>
                 {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
               </p>
               <div className={``}>
