@@ -11,8 +11,8 @@ export default ({ Svg, title, description }) => {
         <Svg
           fill={`${isDarkTheme ? 'white' : 'black'}`}
           className={`          
-          w-[200px]
-          h-[200px]`}
+          w-[180px]
+          h-[180px]`}
           role="img" />
       </div>
       <div className="text--center padding-horiz--md">

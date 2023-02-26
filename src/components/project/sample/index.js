@@ -1,7 +1,6 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
-import LogoAnimated from '../logo/animated'
 import LogoStatic from '../logo/static'
 
 export default () => {
@@ -47,7 +46,7 @@ export default () => {
             <div className={``}>
               <Link
                 className="button button--secondary button--lg"
-                to="/docs/getStarted/intro">
+                to="/docs/getstarted/intro">
                 Get started
               </Link>
             </div>
