@@ -57,29 +57,22 @@ export default () => {
         </CodeBlock>
       </p>
       <p className={``}>
-        <h3>2. Add protocols to your class</h3>
+        <h3>3. Add protocols to your class</h3>
         <CodeBlock language="language-bash">
           {"yarn add @yelounak/localable\nyarn add @yelounak/countryable"}
         </CodeBlock>
         <CodeBlock language="js">
           {`export default class Article extends Servable.App.Object {
             static protocols = [
-          'localable',
-          'countryable',
-          ]
-          ...}`}
+              'localable',          
+            ]
+          ...
+          }`}
         </CodeBlock>
-        {/* <CopyBlock
-          text={`export default class Festival extends Servable.App.Object {
-            static protocols = [
-          'localable',
-          'countryable',
-          ]
-          ...`}
-          language={`javascript`}
-          showLineNumbers={true}
-          wrapLines
-        /> */}
+      </p>
+      <p className={``}>
+        The article table is now localable, which means it contains columns for a string locale and pointer to a rich locale entry in a LocaleRef table handled by the localable protocol.
+        The localable protocol automatically adds a default locale that you can define to every Article object by using triggers.
       </p>
     </div>
   </div>
