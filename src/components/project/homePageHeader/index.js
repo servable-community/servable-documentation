@@ -43,9 +43,9 @@ export default () => {
               text-transparent
               bg-clip-text
               bg-gradient-to-r         
-              from-[#FAF3DD]
-              via-[#656985]
-              to-[#656985]'>{siteConfig.title}</h1>
+              from-[#656985]
+              via-[#898989]
+              to-[#A2A2A2]'>{siteConfig.title}</h1>
               <p className={`font-bold text-lg `}>
                 {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
               </p>
