@@ -9,12 +9,9 @@ export default () => {
   return (
     <header>
       <div className={`
-        bg-gradient-to-r         
-        from-[#FAF3DD]
-        via-[#656985]
-        to-[#656985]
-        bg-opacity-20
-        min-h-[500px]`}>
+       border-b
+       border-b-[#FAF3DD]        
+        min-h-[550px]`}>
         <div class={`
         grid
         grid-cols-1
@@ -42,8 +39,14 @@ export default () => {
           text-left
           pt-12              
         `}>
-              <h1 className='text-7xl text-[#FAF3DD]'>{siteConfig.title}</h1>
-              <p className={`font-bold text-lg text-[#FAF3DD]`}>
+              <h1 className='text-7xl 
+              text-transparent
+              bg-clip-text
+              bg-gradient-to-r         
+              from-[#FAF3DD]
+              via-[#656985]
+              to-[#656985]'>{siteConfig.title}</h1>
+              <p className={`font-bold text-lg `}>
                 {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
               </p>
               <div className={``}>
