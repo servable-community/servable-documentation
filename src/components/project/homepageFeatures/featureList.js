@@ -11,7 +11,7 @@ export default [
     ),
   },
   {
-    title: 'Streamline your server development',
+    title: 'Perfect separation of concerns',
     Svg: require('@site/static/img/anthill2.svg').default,
     description: (
       <>
