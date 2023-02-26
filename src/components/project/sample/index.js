@@ -1,58 +1,86 @@
 import React from 'react'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import Link from '@docusaurus/Link'
-import LogoStatic from '../logo/static'
+import CodeBlock from '@theme/CodeBlock'
+
 
 export default () => {
-  const { siteConfig } = useDocusaurusContext()
-  return (
-    <header className=''>
-      <div class={`
-        min-h-[500px]
+
+  return <div class={`        
         bg-gradient-to-r 
-        from-indigo-600 
-        via-purple-500 
-        to-pink-300 
-        grid
-        grid-cols-1
-        md:grid-cols-2
+        from-[#FAF3DD]
+        dark:from-[#434343]
+        via-[#FAF3DD]
+        dark:via-[#323232]
+        to-[#ffffff]
+        dark:to-[#434343]        
         px-6
         md:px-6      
-        py-4`}>
-        <div class={`
-          text-right  
-          flex
+        py-4
+        flex 
+        justify-center`}>
+    <div class={`          
           justify-center      
           align-middle                
-          h-full
+          max-w-3xl
         `}>
-          {/* <LogoAnimated /> */}
-          <LogoStatic />
-        </div>
-        <div class={`                
-          flex
-          justify-center       
-          p-8
-        `}>
-          <div class={`
-          justify-center
-          text-left
-          pt-12              
-        `}>
-            <h1 className='text-7xl'>{siteConfig.title}</h1>
-            <p className={`font-bold text-lg`}>
-              {`A Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.`}
-            </p>
-            <div className={``}>
-              <Link
-                className="button button--secondary button--lg"
-                to="/docs/getstarted/intro">
-                Get started
-              </Link>
-            </div>
-          </div>
-        </div>
+      <div className={`my-6`}>
+        <h2>{`Quick start`}</h2>
       </div>
-    </header>
-  )
+      <p className={``}>
+        <h3>1. Generate a new project</h3>
+        <CodeBlock language="language-bash">
+          {"yo servable-parse"}
+        </CodeBlock>
+      </p>
+      <p className={``}>
+        <h3>2. Add classes with schema</h3>
+        <CodeBlock language="json">
+          {`{
+        "className": "Article",
+        "fields": {
+          "objectId": {
+              "type": "String"
+          },
+          "createdAt": {
+              "type": "Date"
+          },
+          "updatedAt": {
+              "type": "Date"
+          },
+          "ACL": {
+              "type": "ACL"
+          },
+          "name": {
+              "type": "String"
+          }
+        }
+      }`}
+        </CodeBlock>
+      </p>
+      <p className={``}>
+        <h3>2. Add protocols to your class</h3>
+        <CodeBlock language="language-bash">
+          {"yarn add @yelounak/localable\nyarn add @yelounak/countryable"}
+        </CodeBlock>
+        <CodeBlock language="js">
+          {`export default class Article extends Servable.App.Object {
+            static protocols = [
+          'localable',
+          'countryable',
+          ]
+          ...}`}
+        </CodeBlock>
+        {/* <CopyBlock
+          text={`export default class Festival extends Servable.App.Object {
+            static protocols = [
+          'localable',
+          'countryable',
+          ]
+          ...`}
+          language={`javascript`}
+          showLineNumbers={true}
+          wrapLines
+        /> */}
+      </p>
+    </div>
+  </div>
 }
