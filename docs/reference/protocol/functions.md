@@ -7,12 +7,11 @@ sidebar_position: 2
 :::info Path
 **/functions**
 :::
+This is the Servable way of implementing Parse Server Cloud functions https://docs.parseplatform.org/cloudcode/guide/
 
 A function is an exposed API function that is accessible at
 https://myserver.com/parse/myFunction
 
-This is the Servable way of implementing Parse Server Cloud functions https://docs.parseplatform.org/cloudcode/guide/
- 
 You can define here all the functions for a protocol.
 Servable will register all exported functions in all the files contained in functions recursively.
 
@@ -27,7 +26,7 @@ Servable will register all exported functions in all the files contained in func
 ### Options
 #### Prefix
 By default Servable prefixes all protocol functions with the protocol id or slug if provided with a camel case.
-For example, if you define a function **versionItem** for the protocol *Versionable*. The final function will be **versionableVersionItem**
+For example, if you define a function **versionItem** for the protocol *Versionable*. The final function will be **versionableVersionItem** and will be accessible at https://myserver.com/parse/versionableVersionItem
 
 ## Examples
 
