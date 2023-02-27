@@ -18,6 +18,8 @@ const config = {
   favicon: 'img/favicon.ico', //https://icons8.com/icon/set/animals/plasticine
   plugins: [
     require.resolve('docusaurus-lunr-search'),
+    require.resolve('docusaurus-plugin-image-zoom'),
+
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
@@ -98,6 +100,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
+      },
       navbar: {
         title: 'Servable',
         logo: {
