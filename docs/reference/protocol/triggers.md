@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # triggers
 
+Defines triggers on classes that conform to this protocol
+
 ```js
 import setup from '../lib/setup'
 import tearDown from '../lib/tearDown'

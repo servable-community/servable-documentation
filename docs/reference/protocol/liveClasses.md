@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# liveClasses
+# liveClasses.js
 
 :::info Path
 **/liveClasses.js**
