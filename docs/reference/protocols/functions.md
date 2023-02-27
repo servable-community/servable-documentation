@@ -2,115 +2,68 @@
 sidebar_position: 2
 ---
 
-# classes
+# functions
 
-Lists the classes (tables) this protocol defines at a high level (different from schema classes defined in schema).
+:::info Path
+**/functions**
+:::
 
-## classes/myclass/class/
+A function is an exposed API function that is accessible at
+https://myserver.com/parse/myFunction
+
+This is the Servable way of implementing Parse Server Cloud functions https://docs.parseplatform.org/cloudcode/guide/
+ 
+You can define here all the functions for a protocol.
+Servable will register all exported functions in all the files contained in functions recursively.
+
+## API
+
+### Function
+- Arguments:
+    - **request**: a Parse request
+- Returns:
+    - void
+
+### Options
+#### Prefix
+By default Servable prefixes all protocol functions with the protocol id or slug if provided with a camel case.
+For example, if you define a function **versionItem** for the protocol *Versionable*. The final function will be **versionableVersionItem**
+
+## Examples
+
+### Request password reset
+In **App protocol**, allow a user to reset his password.
+
 ```js
+import requestOperation from '../lib/userRequest/resetPassword/request'
+import redeemIfApplicable from '../lib/userRequest/resetPassword/redeem'
+import requestsPerRate from '../lib/userRequest/resetPassword/rate'
 
-export default class Wallet extends Servable.App.Object {
-    constructor() {
-        super('Wallet')
+import validator from "email-validator"
+export const userRequestPasswordReset = async (request) => {
+    const { email } = request.params
+    if (!email || !validator.validate(email)) {
+        throw (new Error('Please provide an email.'))
     }
 
-    static protocols = [
-        'roleguestable',
-        'currencyable'
-    ]
-
-    transactionsQuery = () => {
-        const _wallet = this
-        const relation = _wallet.relation('transactions')
-        return relation.query()
+    const requests = await requestsPerRate({ email })
+    if (requests > process.env.EMAIL_RESET_REQUESTS_MAX_RATE) {
+        throw (new Error('You have requested an email reset too many times. Please wait until tomorrow.'))
     }
 
-    updateComputedAmount = async () => {
-
-    }
-
-    /* #region Wallet */
-    addTransaction = async (walletTransaction) => {
-        const walletTransactionCurrency = walletTransaction.get('currency')
-        if (!walletTransactionCurrency) {
-            console.error(new Error('addTransaction > cannot add walletTransaction because it has no currency code'))
-            return null
-        }
-        const _wallet = this
-        const walletCurrency = _wallet.get('currency')
-        if (!walletCurrency) {
-            console.error(new Error('addTransaction > cannot add walletTransaction because to wallet because wallet has no currency code'))
-            return null
-        }
-
-        walletTransaction.set('wallet', _wallet)
-        await walletTransaction.save(null, { useMasterKey: true })
-
-        const relation = _wallet.relation('transactions')
-        relation.add(walletTransaction)
-        var amount = _wallet.get('amount')
-
-
-
-        amount = !amount ? 0 : amount
-        var transactionAmount = walletTransaction.get('amount')
-        var convertedTransactionAmount
-        convertedTransactionAmount = transactionAmount
-        //TODO:
-        //if (walletCurrency.toUpperCase() === walletTransactionCurrency.toUpperCase()) {
-        // convertedTransactionAmount = transactionAmount
-        // } else {
-        //     let currencyConverter = new CC({
-        //         from: walletTransactionCurrency.toUpperCase(),
-        //         to: walletCurrency.toUpperCase(),
-        //         amount: transactionAmount,
-        //         //isDecimalComma: true
-        //     })
-        //     const response = await currencyConverter.convert()
-        //     if (!response) {
-        //         console.error(new Error('addTransaction > cannot convert'))
-        //         return null
-        //     }
-        //     convertedTransactionAmount = response
-        // }
-
-        convertedTransactionAmount = !convertedTransactionAmount ? 0 : convertedTransactionAmount
-        amount += convertedTransactionAmount
-        _wallet.set('amount', amount)
-        return _wallet.save(null, { useMasterKey: true })
-    }
-
-    removeTransaction = async (walletTransaction) => {
-        const _wallet = this
-        const relation = _wallet.relation('transactions')
-        relation.remove(walletTransaction)
-        return _wallet.save(null, { useMasterKey: true })
-    }
-
-    /* #endregion */
+    return requestOperation({ email })
 }
 ``` 
 
-## classes/myclass/triggers/
+### Version an object
+In **Versionable** protocol, force the versioning of an object.
 
 ```js
-import setup from '../lib/setup'
-import tearDown from '../lib/tearDown'
-import completeSetup from '../lib/completeSetup'
+import addVersionWithId from '../lib/addVersionWithId'
 
-export const afterDelete = async ({ request }) => {
-    const { object } = request
-    await tearDown({ object })
+export const versionItem = async (request) => {
+    const user = await Servable.App.Utils.prepareRequestWithUser(request)
+    const { className, id } = request.params
+    return addVersionWithId({ className, id, user })
 }
-
-export const beforeSave = async ({ request }) => {
-    const { object } = request
-    await setup({ object })
-}
-
-export const afterSave = async ({ request }) => {
-    const { object } = request
-    await completeSetup({ object })
-}
-```
-
+``` 

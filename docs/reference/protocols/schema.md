@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# classes
+# schema
 
 Lists the classes (tables) this protocol defines at a high level (different from schema classes defined in schema).
 
