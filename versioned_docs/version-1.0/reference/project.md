@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Project structure
 
-```
+```bash
 my-app
 ├── lib
 │   ├── index.js

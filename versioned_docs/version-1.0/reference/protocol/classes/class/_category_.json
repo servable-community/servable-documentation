@@ -1,8 +1,8 @@
 {
-  "label": "Protocols",
+  "label": "class",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Protocols concept"
+    "description": "class folder"
   }
 }
