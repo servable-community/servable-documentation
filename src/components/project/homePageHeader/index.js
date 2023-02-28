@@ -52,7 +52,7 @@ export default () => {
               <div className={``}>
                 <Link
                   className="button button--secondary button--lg"
-                  to="/docs/getstarted/intro">
+                  to="/docs/getstarted/overview">
                   Get started
                 </Link>
               </div>
