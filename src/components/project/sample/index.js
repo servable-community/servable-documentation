@@ -35,7 +35,7 @@ export default () => {
         <h3>2. Add classes with schema</h3>
         <CodeBlock language="json">
           {`{
-        "className": "Article",
+        "className": "Creation",
         "fields": {
           "objectId": {
               "type": "String"
@@ -62,7 +62,7 @@ export default () => {
           {"yarn add @yelounak/localable\nyarn add @yelounak/countryable"}
         </CodeBlock>
         <CodeBlock language="js">
-          {`export default class Article extends Servable.App.Object {
+          {`export default class Creation extends Servable.App.Object {
             static protocols = [
               'localable',          
             ]
@@ -71,8 +71,8 @@ export default () => {
         </CodeBlock>
       </p>
       <p className={``}>
-        The article table is now localable, which means it contains columns for a string locale and pointer to a rich locale entry in a LocaleRef table handled by the localable protocol.
-        The localable protocol automatically adds a default locale that you can define to every Article object by using triggers.
+        The creation table is now localable, which means it contains columns for a string locale and pointer to a rich locale entry in a LocaleRef table handled by the localable protocol.
+        The localable protocol automatically adds a default locale that you can define to every Creation object by using triggers.
       </p>
     </div>
   </div>
