@@ -4,16 +4,16 @@ import SVGComponent from '@site/src/components/generic/svg'
 export default () => {
 
   return <div class={`        
-        bg-gradient-to-r 
+        bg-gradient-to-r
         from-[#FAF3DD]
-        dark:from-[#434343]
+        dark:from-[#121212]
         via-[#FAF3DD]
-        dark:via-[#323232]
+        dark:via-[#141414]
         to-[#ffffff]
-        dark:to-[#434343]        
+        dark:to-[#242424]        
         px-6
         md:px-6      
-        py-4
+        py-8
         flex 
         justify-center`}>
     <SVGComponent
