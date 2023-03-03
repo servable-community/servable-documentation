@@ -13,25 +13,25 @@ const Search = props => {
   const isBrowser = useIsBrowser();
   const { baseUrl } = siteConfig;
   const initAlgolia = (searchDocs, searchIndex, DocSearch) => {
-      new DocSearch({
-        searchDocs,
-        searchIndex,
-        baseUrl,
-        inputSelector: "#search_input_react",
-        // Override algolia's default selection event, allowing us to do client-side
-        // navigation and avoiding a full page refresh.
-        handleSelected: (_input, _event, suggestion) => {
-          const url = suggestion.url || "/";
-          // Use an anchor tag to parse the absolute url into a relative url
-          // Alternatively, we can use new URL(suggestion.url) but its not supported in IE
-          const a = document.createElement("a");
-          a.href = url;
-          // Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
-          // So, we can safely remove it. See https://github.com/facebook/docusaurus/issues/1828 for more details.
+    new DocSearch({
+      searchDocs,
+      searchIndex,
+      baseUrl,
+      inputSelector: "#search_input_react",
+      // Override algolia's default selection event, allowing us to do client-side
+      // navigation and avoiding a full page refresh.
+      handleSelected: (_input, _event, suggestion) => {
+        const url = suggestion.url || "/";
+        // Use an anchor tag to parse the absolute url into a relative url
+        // Alternatively, we can use new URL(suggestion.url) but its not supported in IE
+        const a = document.createElement("a");
+        a.href = url;
+        // Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
+        // So, we can safely remove it. See https://github.com/yelounak/generator-servable-parse/issues/1828 for more details.
 
-          history.push(url);
-        }
-      });
+        history.push(url);
+      }
+    });
   };
 
   const pluginData = usePluginData('docusaurus-lunr-search');

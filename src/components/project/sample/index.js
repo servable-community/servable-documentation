@@ -28,7 +28,7 @@ export default () => {
       <p className={``}>
         <h3>1. Generate a new project</h3>
         <CodeBlock language="language-bash">
-          {"yo servable-parse"}
+          {"yo servable"}
         </CodeBlock>
       </p>
       <p className={``}>

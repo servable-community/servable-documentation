@@ -8,13 +8,7 @@ export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
     <header>
-      <div className={`
-        bg-gradient-to-r         
-        from-[#E76F51]
-        via-[#E76F51]
-        to-[#E76F51]
-        bg-opacity-20        
-       border-b-[#FAF3DD]        
+      <div className={`               
         min-h-[600px]`}>
         <div class={`
         grid

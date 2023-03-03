@@ -17,6 +17,15 @@ We can do much better by creating a protocol called *commentable* that will be r
 
 By doing so we have packaged the ability to comment into one component that can be reused easily across the project.
 
+A protocol does not stop at the server. Some protocols have a client counterpart that acts in tandem with the server. If we consider the Commentable protocol, it can be distributed in a commentable-server npm package, alongside a commentable-react package that contains React components that can be called on any object that conforms to the protocol. The components include, for a commentable object:
+- **CommentableList** that displays a paginated list of comments 
+- **CommentableComment** that displays a paginated list of comments
+- **CommentableCommentsCount** that displays the total number of comments 
+- **CommentableCommentsExcerpt** that displays an excerpt
+
+By making an object Commentable, you're adding not only database fields and server methods to it, you are also taking advantage of a front library made for its capacity.
+
+
 ## Lifecycle
 ```mermaid
 stateDiagram
