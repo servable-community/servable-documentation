@@ -129,6 +129,12 @@ const config = {
           },
           // {
           //   type: 'doc',
+          //   docId: 'reference/overview',
+          //   position: 'left',
+          //   label: 'Reference',
+          // },
+          // {
+          //   type: 'doc',
           //   docId: 'intro',
           //   position: 'left',
           //   label: 'Protocols',

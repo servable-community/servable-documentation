@@ -1,10 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Local
+# Docker
 
 Use this docker-compose file to start a local environment to use with you servable-parse
+
+#TODO:
 
 ```yaml
 version: "3.7"

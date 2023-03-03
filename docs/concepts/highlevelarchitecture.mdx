@@ -6,18 +6,17 @@ import SVGComponent from '@site/src/components/generic/svg'
 
 # High level architecture
 
-Servable is a template that helps orchestrate protocols and their respective classes during the entire lifecycle of a server.
-Servable is built on top of Parse Server with the intention to handle protocols along the features Parse Server already serves.
+Servable is a Node JS template that helps orchestrate protocols and their respective classes for the entire lifecycle of a server.
+Servable is built on top of Parse Server and Express JS with the intention to handle protocols along the features Parse Server already serves.
 
-Servable at its core is a structure that works hand in hand with the servable-engine which handles all the heavy lifting of registering protocols, computing classes, handling migrations and more.
+Servable at its core is a template that works hand in hand with the servable-engine which handles all the heavy lifting of registering protocols, computing classes and their schemas, handling migrations and more.
 
 <SVGComponent 
 Svg={require('./diagram.svg').default} 
 className={`h-[300px]`} 
 role="img" />
 
-
-Servable can be launched using a configuration.
+Servable can be launched using one or more configurations.
 
 ## Components
 - An Express app
