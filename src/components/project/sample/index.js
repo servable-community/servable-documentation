@@ -5,16 +5,16 @@ import CodeBlock from '@theme/CodeBlock'
 export default () => {
 
   return <div class={`        
-        bg-gradient-to-r 
-        from-[#FAF3DD]
-        dark:from-[#434343]
-        via-[#FAF3DD]
-        dark:via-[#323232]
-        to-[#ffffff]
-        dark:to-[#434343]        
+  border-l-0
+  border-r-0
+  border-b-0
+       border-t-2
+       border-dashed
+       border-gray-400
+       mt-10        
         px-6
         md:px-6      
-        py-4
+        py-8
         flex 
         justify-center`}>
     <div class={`          
