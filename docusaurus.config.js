@@ -17,7 +17,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico', //https://icons8.com/icon/set/animals/plasticine
   plugins: [
-    require.resolve('docusaurus-lunr-search'),
+    // require.resolve('docusaurus-lunr-search'),
     require.resolve('docusaurus-plugin-image-zoom'),
 
     async function myPlugin(context, options) {
