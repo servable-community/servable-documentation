@@ -165,15 +165,15 @@ const config = {
       footer: {
         style: 'light',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Guides',
-                to: '/docs/getstarted/overview',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Guides',
+          //       to: '/docs/getstarted/overview',
+          //     },
+          //   ],
+          // },
           // {
           //   title: 'Community',
           //   items: [
@@ -191,36 +191,36 @@ const config = {
           //     },
           //   ],
           // },
-          {
-            title: 'Enterprise',
-            items: [
-              {
-                label: 'Professional support',
-                href: '#',
-              },
-              {
-                label: 'Use cases',
-                href: '#',
-              },
-              {
-                label: 'Pricing',
-                href: '#',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              // {
-              //   label: 'GitHub',
-              //   href: 'https://github.com/yelounak/servable-parse',
-              // },
-            ],
-          },
+          // {
+          //   title: 'Enterprise',
+          //   items: [
+          //     {
+          //       label: 'Professional support',
+          //       href: '#',
+          //     },
+          //     {
+          //       label: 'Use cases',
+          //       href: '#',
+          //     },
+          //     {
+          //       label: 'Pricing',
+          //       href: '#',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     {
+          //       label: 'Blog',
+          //       to: '/blog',
+          //     },
+          //     // {
+          //     //   label: 'GitHub',
+          //     //   href: 'https://github.com/yelounak/servable-parse',
+          //     // },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} anak Inc. Built with Docusaurus.`,
       },

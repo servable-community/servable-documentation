@@ -1,6 +1,8 @@
+
 red: #E76F51
 blue: #656985
 ivoire: #FAF3DD
+ivoire_light: #fcf9ed
 line: #4C4C4C
 
  bg-gradient-to-r         
