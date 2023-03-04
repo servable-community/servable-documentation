@@ -12,7 +12,7 @@ Get started by **creating a new application**.
 
 ### What you'll need
 
-- **[Node.js](https://nodejs.org/en/download/)** version 16.14 or above:
+- **[Node.js](https://nodejs.org/en/download/)** version 18.0 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
 - **[Yeoman](https://yeoman.io)** version 4.3.1 or above
