@@ -21,6 +21,7 @@
   --ifm-color-primary-light: #eb866c;
   --ifm-color-primary-lighter: #ed917a;
   --ifm-color-primary-lightest: #f2b3a3;
+  --ifm-background-color: #faf3dd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* --ifm-font-family-base: 'IBM Plex Mono'; */
@@ -36,6 +37,7 @@
   --ifm-color-primary-light: #eb866c;
   --ifm-color-primary-lighter: #ed917a;
   --ifm-color-primary-lightest: #f2b3a3;
+  --ifm-background-color: #212121;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 

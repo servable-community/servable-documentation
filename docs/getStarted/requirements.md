@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Installation
+# Requirements
 
 You can install Servable for Parse Server via **[Yeoman](https://yeoman.io)**.
 
@@ -25,12 +25,23 @@ Launch a complete local infrastructure to support the servable.
 
 **[docker-compose](../static/docker-compose.yaml)**
 
+## Install the generator
+
+```bash
+npm install -g generator-servable
+```
+<!-- ## Create a new folder 
+
+```bash
+mkdir myApp && cd myApp
+``` -->
+
 ## Generate a new server
 
 Generate a new servable app by running the command:
 
 ```bash
-yo servable-parse
+yo servable
 ```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.

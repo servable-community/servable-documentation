@@ -117,16 +117,28 @@ const config = {
           src: 'img/polar-bear.png',
         },
         items: [
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'right',
+          // },
           {
             type: 'doc',
             docId: 'getstarted/overview',
-            position: 'left',
+            position: 'right',
             label: 'Guides',
           },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference/overview',
+          //   position: 'left',
+          //   label: 'Reference',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'protocolsLibrary/overview',
+          //   position: 'left',
+          //   label: 'Protocols library',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'reference/overview',

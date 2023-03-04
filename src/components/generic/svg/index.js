@@ -6,6 +6,7 @@ export default ({ Svg, title, description, className = '' }) => {
 
   return <Svg
     fill={`${isDarkTheme ? 'white' : 'black'}`}
+
     className={` 
             ${className}         
           w-full`}
