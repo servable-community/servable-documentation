@@ -15,7 +15,7 @@ export default [
     Svg: require('@site/static/img/anthill2.svg').default,
     description: (
       <>
-        Servable streamlines the server development by separating every "groupable" behaviour to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package
+        Servable streamlines the server development by separating every "groupable" logic to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package
       </>
     ),
   },

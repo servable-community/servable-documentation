@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Installation
 
-1. Launch the docker-compose 
+## 1. Launch the docker-compose 
 
 Launch a complete local infrastructure to support the servable.
 
@@ -13,7 +13,7 @@ Launch a complete local infrastructure to support the servable.
 ```bash
 docker compose --project-name manivel -f docker-compose.app.yml
 ```
-2. Install the generator
+## 2. Install the generator
 
 ```bash
 npm install -g generator-servable
@@ -24,7 +24,7 @@ npm install -g generator-servable
 mkdir myApp && cd myApp
 ``` -->
 
-3. Generate a new server
+## 3. Generate a new server
 
 Generate a new servable app by running the command:
 
@@ -38,7 +38,7 @@ You will be prompted to enter the basic informations needed to start a full fled
 
 The command also installs all necessary dependencies you need to run servable.
 
-4. Start your server
+## 4. Start your server
 
 Run the development server:
 

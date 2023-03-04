@@ -124,7 +124,7 @@ const config = {
             type: 'doc',
             docId: 'getStarted/overview',
             position: 'right',
-            label: 'Guides',
+            label: 'Documentation',
           },
           // {
           //   type: 'doc',
