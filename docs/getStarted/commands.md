@@ -31,6 +31,14 @@ cd lib/protocols
 yo servable:protocol
 ```
 
+### Eject a protocol
+Ejects an inline protocol by creating an npm package
+
+```bash
+cd lib/protocols
+yo servable:ejectprotocol
+```
+
 ### Create a new class in a protocol
 
 ```bash
