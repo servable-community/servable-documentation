@@ -27,11 +27,11 @@ yo servable
 ### Create a new protocol
 
 ```bash
-yo servable protocol
+yo servable:protocol
 ```
 
 ### Update an existing protocol
 
 ```bash
-yo servable protocol
+yo servable:protocol
 ```

@@ -8,6 +8,9 @@ sidebar_position: 2
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
 - **[Yeoman](https://yeoman.io)** version 4.3.1 or above
+```bash
+npm install -g yo
+```
 
 - **[Docker](https://docker.io)** version 20.10.0 or above
 
