@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# module
+# manifest
 Protocol's manifest.
 
 :::info Path
-**/module.json**
+**/manifest.json**
 :::
 
 ## Values

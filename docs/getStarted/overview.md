@@ -23,7 +23,7 @@ Servable at its core is a server template that uses the servable-engine to orche
 
 Main features:
 - Quick start and Plug & Play Node JS framework
-- Run protocols
+- Tailored for protocols
 - Schema based classes and auto-migration 
 - Templates for classes 
 - Templates for custom protocols
