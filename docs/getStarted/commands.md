@@ -27,11 +27,13 @@ yo servable
 ### Create a new protocol
 
 ```bash
+cd lib/protocols
 yo servable:protocol
 ```
 
-### Update an existing protocol
+### Create a new class in a protocol
 
 ```bash
-yo servable:protocol
+cd my-protocol
+yo servable:class
 ```
