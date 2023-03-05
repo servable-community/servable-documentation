@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Overview
@@ -11,3 +11,11 @@ sidebar_position: 2
 - See the movie details and give a social impression: like, comment, share
 - Follow the movie director and other users
 
+## Components
+We will need
+- A docker environment
+- A servable backend  
+    - A servable app
+    - An app database, we will choose Mongo
+    - An utils database    
+- A React web app
