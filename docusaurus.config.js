@@ -126,12 +126,18 @@ const config = {
             position: 'right',
             label: 'Documentation',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'reference/overview',
-          //   position: 'left',
-          //   label: 'Reference',
-          // },
+          {
+            type: 'doc',
+            docId: 'reference/overview',
+            position: 'right',
+            label: 'Reference',
+          },
+          {
+            type: 'doc',
+            docId: 'protocolsLibrary/overview',
+            position: 'right',
+            label: 'Protocols Library',
+          },
           // {
           //   type: 'doc',
           //   docId: 'protocolsLibrary/overview',

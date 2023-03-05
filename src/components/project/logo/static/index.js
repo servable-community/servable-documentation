@@ -11,5 +11,15 @@ const sourceForSize = ({ size }) => {
             {
                 return 'img/polar-bear.png'
             }
+        case 's': {
+            return 'img/polar-bear-3.png'
+        }
+        case 'm': {
+            return 'img/polar-bear-2.png'
+        }
+        case 'l': {
+            return 'img/polar-bear-1.png'
+        }
+
     }
 }

@@ -11,20 +11,28 @@ These commands are available once you install the servable generator:
 ```bash
 npm install -g generator-servable
 ```
+https://www.pluralsight.com/guides/install-npm-packages-from-gitgithub
+```
+npm i -g git+ssh://git@github.com:yelounak/generator-servable.git
+```
 
 ### Create a new app
-
+Creates a new servable app and installs dependencies.
 ```bash
 yo servable
 ```
 
 ### Update an existing app
+For now we use the same command as for the creation.
+In our tests we have confronted few conflicts when updating a servable project by this method.
+We might add a custom upgrader when we have a radical template change in the future.
 
 ```bash
 yo servable
 ```
 
 ### Create a new protocol
+Adds an inline protocol to a Servable project
 
 ```bash
 cd lib/protocols
@@ -39,7 +47,7 @@ cd lib/protocols
 yo servable:ejectprotocol
 ```
 
-### Create a new class in a protocol
+### Add a new class to a protocol
 
 ```bash
 cd my-protocol
