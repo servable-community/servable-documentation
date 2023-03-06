@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Overview
-![logo](/img/polar-bear-4.png)
+![logo](/img/direction-sign-3.png)
 
 **We will use Servable to build a social movie website that allows users to:**
 - Have an account and a profile

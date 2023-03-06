@@ -134,6 +134,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'tutorial/overview',
+            position: 'right',
+            label: 'Tutorial',
+          },
+          {
+            type: 'doc',
             docId: 'protocolsLibrary/overview',
             position: 'right',
             label: 'Protocols Library',
