@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Contributing
+# Contribution guide
 
 ![logo](/img/polar-bear-4.png)
 
