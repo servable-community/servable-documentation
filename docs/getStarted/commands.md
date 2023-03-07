@@ -57,3 +57,16 @@ yo servable:ejectprotocol
 cd my-protocol
 yo servable:class
 ```
+
+### Generate docker compose
+
+```bash
+mkdir infrastructure 
+cd infrastructure
+yo servable:docker
+cd docker
+mkdir data/app/utils
+openssl rand -base64 741 > data/app/utils/replica.key
+chmod 600 data/app/utils/replica.key
+```
+

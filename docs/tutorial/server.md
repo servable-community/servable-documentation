@@ -12,19 +12,25 @@ Let's create our Servable app
 npm install -g generator-servable
 npm install -g yo
 ```
+Get Docker:
+https://docs.docker.com/get-docker/
 
 ### 2. Create a parent folder for the whole project
 ```bash
-mkdir opus
-cd opus
+mkdir booklover
+cd booklover
 ```
 
 ### 3. Launch docker server
 The docker file can be found here: **[docker-compose](../static/docker-compose.yaml)**
 ```bash
-mkdir infrastructure
+mkdir infrastructure 
 cd infrastructure
-docker compose --project-name opus -f docker-compose.app.yml
+yo servable:docker
+```
+
+```bash
+docker compose --project-name booklover -f docker-compose.yml up -d
 ```
 
 ### 4. Create the app
@@ -33,11 +39,11 @@ cd ..
 ```
 
 ```bash
-yo servable --appName Opus --appId opus --appId --masterKey MyMasterKeyToHide --javascriptKey MyJavascriptKeyToHide
+yo servable --appName Booklover --appId booklover
 ```
 
 ```bash
-cd opus
+cd booklover
 ```
 
 ## Data model
