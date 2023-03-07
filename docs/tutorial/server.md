@@ -22,16 +22,21 @@ cd booklover
 ```
 
 ### 3. Launch docker server
-The docker file can be found here: **[docker-compose](../static/docker-compose.yaml)**
+
+Generate the environment:
 ```bash
 mkdir infrastructure 
 cd infrastructure
 yo servable:docker
 ```
-
+Launch the environment:
 ```bash
 docker compose --project-name booklover -f docker-compose.yml up -d
 ```
+
+:::tip
+For **manual installation** the docker file can be found here: **[docker-compose](../static/docker-compose.yaml)**
+:::
 
 ### 4. Create the app
 ```bash
