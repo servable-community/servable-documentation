@@ -29,6 +29,7 @@ mkdir infrastructure
 cd infrastructure
 yo servable:docker
 ```
+
 Launch the environment:
 ```bash
 docker compose --project-name booklover -f docker-compose.yml up -d
