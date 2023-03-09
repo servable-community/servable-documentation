@@ -63,28 +63,34 @@ The _User, _Session and _Installation tables are automatically generated and han
 
 We will need:
 - A **Book** table to store the books users have read or want to read
+- An **excerpt** table to store books excerpts
 - A **Selection** table to store our editorial picks of the day 
 
+The **Book** class will be central to our application as it will be
+- bookmarkable
+- followable
+- commentable
+- reactable (likes)
+- sharable
 
+The **Excerpt** class will also be central to our application as it allows a finer interaction between users, it will be:
+- bookmarkable
+- followable
+- commentable
+- reactable (likes)
+- sharable
 
+As we can see the **Book** and the **Excerpt** classes share the same behaviour for basic social interactions. We will naturally extract these functionalities into **protocols** from the get-go.
 
 ```mermaid
 erDiagram
-    BOOK ||--o{ COMMENT : places
+    BOOK ||--o{ EXCERPT : contains
     BOOK {
         string name
         string custNumber
         string sector
+    }   
+    EXCERPT {
+        string value        
     }
-    COMMENT ||--|{ LINE-ITEM : contains
-    COMMENT {
-        int COMMENTNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-
 ```

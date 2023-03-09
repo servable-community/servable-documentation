@@ -2,7 +2,12 @@
 sidebar_position: 3
 ---
 
-# Installation
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import CodeBlock from '@theme/CodeBlock'
+
+
+# Quick Start
 
 ## 1. Launch the docker-compose 
 
@@ -15,9 +20,19 @@ docker compose --project-name manivel -f docker-compose.app.yml
 ```
 ## 2. Install the generator
 
-```bash
-npm install -g generator-servable
-```
+<Tabs>
+  <TabItem value="npm" label="npm" default>
+    <CodeBlock language="bash">
+          {"npm install -g generator-servable"}
+    </CodeBlock>
+  </TabItem>  
+  <TabItem value="bash" label="yarn">
+    <CodeBlock language="bash">
+          {"yarn add generator-servable"}
+    </CodeBlock>    
+  </TabItem>
+</Tabs>
+
 <!-- ## Create a new folder 
 
 ```bash
