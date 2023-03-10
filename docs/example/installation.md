@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import BashTabs from '@site/src/components/generic/bashTabs'
+
 
 # Installation
 
@@ -8,10 +10,9 @@ sidebar_position: 2
 Let's create our Servable app
 
 ### 1. Install dependencies
-```bash
-npm install -g generator-servable
-npm install -g yo
-```
+<BashTabs npm={"npm install -g generator-servable"} />
+<BashTabs npm={"npm install -g yo"} />
+
 Get Docker:
 https://docs.docker.com/get-docker/
 

@@ -134,9 +134,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'tutorial/overview',
+            docId: 'example/overview',
             position: 'right',
-            label: 'Tutorial',
+            label: 'Example',
           },
           {
             type: 'doc',
