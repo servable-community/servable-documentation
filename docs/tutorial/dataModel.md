@@ -1,56 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Server configuration
+# Data model and protocols
 
-## Bootstrap
-Let's create our Servable app
-
-### 1. Install dependencies
-```bash
-npm install -g generator-servable
-npm install -g yo
-```
-Get Docker:
-https://docs.docker.com/get-docker/
-
-### 2. Create a parent folder for the whole project
-```bash
-mkdir booklover
-cd booklover
-```
-
-### 3. Launch docker server
-
-Generate the environment:
-```bash
-mkdir infrastructure 
-cd infrastructure
-yo servable:docker
-```
-
-Launch the environment:
-```bash
-docker compose --project-name booklover -f docker-compose.yml up -d
-```
-
-:::tip
-For **manual installation** the docker file can be found here: **[docker-compose](../static/docker-compose.yaml)**
-:::
-
-### 4. Create the app
-```bash
-cd ..
-```
-
-```bash
-yo servable --appName Booklover --appId booklover
-```
-
-```bash
-cd booklover
-```
 
 ## Data model
 At this point the application has 4 tables already:
@@ -94,3 +47,71 @@ erDiagram
         string value        
     }
 ```
+
+## Applying protocols
+
+We will need these fields in a Book:
+- id
+- name
+- description
+- genre
+- author => Author
+- ISBN
+- excerpts => [Excerpt]
+
+And for an excerpt:
+- id
+- name
+- content
+- book => Book
+
+For an author:
+- id
+- name
+- description
+- books => [Book]
+
+These fields are special to the Booklover application, we don't intend to move them onto a dedicated protocol yet. They will sit within the app protocol.
+
+```mermaid
+---
+title: Book
+---
+classDiagram    
+    Book <|-- Excerpt   
+    Author <|-- Book
+    class Book {
+        +String id
+        +String name
+        +String description   
+        +String genre
+        +String authorName
+    }
+    class Excerpt {
+        +String id
+        +String name
+        +String content
+        +String bookId
+    }   
+    class Author {
+        +String id
+        +String name     
+    }   
+```
+
+Let's see how applying protocols affects our classes:
+
+Book:
+- id
+- name
+- description
+- genre
+- author => Author
+- ISBN
+- excerpts => [Excerpt]
+- **followableEntries** 🆕
+- **followableEntriesCount** 🆕
+
+This protocol also adds these functions:
+- **followableFollow**
+- **followableUnFollow**
