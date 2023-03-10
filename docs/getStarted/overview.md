@@ -49,32 +49,15 @@ Servable is likely a good fit for you if
 - keeps the number of followers up to date on the followed object
 - creates and maintains join tables with the status of the follow relationship
 
+[Read more](../protocolsLibrary/followable/)
+
 ### Emailable
 - Gives a ServableApp the capacity to use transactional emails via a simple API that is registered via the Servable.Mailing object
 - Keeps a list of email templates
 - Can be used with Sendgrid as of now
 
-```mermaid
-erDiagram
-    ARTICLE ||--o{ COMMENTABLEENTRY : entries
-    ARTICLE {
-        string objectId
-        string name
-        string custNumber
-        string sector
-    }
-    COMMENTABLEENTRY ||--|{ LINE-ITEM : contains
-    COMMENTABLEENTRY {
-        string objectId
-        string value
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
+[Read more](../protocolsLibrary/emailable/)
 
-```
 **...you love Parse Server**
 There is no reason not to use Servable if you have previously used a Parse Server. 
 

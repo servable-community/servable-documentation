@@ -2,10 +2,7 @@
 sidebar_position: 3
 ---
 
-import Tabs from '@theme/Tabs'
-import TabItem from '@theme/TabItem'
-import CodeBlock from '@theme/CodeBlock'
-
+import BashTabs from '@site/src/components/generic/bashTabs'
 
 # Quick Start
 
@@ -20,18 +17,7 @@ docker compose --project-name manivel -f docker-compose.app.yml
 ```
 ## 2. Install the generator
 
-<Tabs>
-  <TabItem value="npm" label="npm" default>
-    <CodeBlock language="bash">
-          {"npm install -g generator-servable"}
-    </CodeBlock>
-  </TabItem>  
-  <TabItem value="bash" label="yarn">
-    <CodeBlock language="bash">
-          {"yarn add generator-servable"}
-    </CodeBlock>    
-  </TabItem>
-</Tabs>
+<BashTabs npm={"npm install -g generator-servable"} />
 
 <!-- ## Create a new folder 
 
@@ -59,8 +45,9 @@ Run the development server:
 
 ```bash
 cd my-app
-yarn start
 ```
+
+<BashTabs yarn={"yarn start"} />
 
 The `cd` command changes the directory you're working with. In order to work with your newly created servable-parse app, you'll need to navigate the terminal there.
 

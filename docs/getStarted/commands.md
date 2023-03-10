@@ -37,36 +37,28 @@ yo servable
 
 ### Create a new protocol
 Adds an inline protocol to a Servable project
+In the parent folder of the protocol you want to create (usually lib/protocols)
 
 ```bash
-cd lib/protocols
 yo servable:protocol
 ```
 
 ### Eject a protocol
-Ejects an inline protocol by creating an npm package
-
+Ejects an inline protocol by creating an npm package:
+In the parent folder of the protocol you want to eject (usually lib/protocols)
 ```bash
-cd lib/protocols
 yo servable:ejectprotocol
 ```
 
 ### Add a new class to a protocol
-
+Inside a protocol, generate a class:
 ```bash
-cd my-protocol
 yo servable:class
 ```
 
 ### Generate docker compose
 
 ```bash
-mkdir infrastructure 
-cd infrastructure
 yo servable:docker
-cd docker
-mkdir data/app/utils
-openssl rand -base64 741 > data/app/utils/replica.key
-chmod 600 data/app/utils/replica.key
 ```
 
