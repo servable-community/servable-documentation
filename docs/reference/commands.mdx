@@ -12,9 +12,6 @@ You can install Servable for Parse Server via **[Yeoman](https://yeoman.io)**.
 These commands are available once you install the servable generator:
 <BashTabs npm={"npm install -g generator-servable"} />
 
-https://www.pluralsight.com/guides/install-npm-packages-from-gitgithub
-<BashTabs npm={"npm i -g git+ssh://git@github.com:yelounak/generator-servable.git"} />
-<BashTabs npm={"npm i git+https://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@github.com/yelounak/generator-servable.git"} />
 
 ### Create a new app
 Creates a new servable app and installs dependencies.
@@ -47,14 +44,27 @@ yo servable:ejectprotocol
 ```
 
 ### Add a new class to a protocol
-Inside a protocol, generate a class:
+Scaffolds a new class inside a protocol
 ```bash
 yo servable:class
 ```
 
-### Generate docker compose
+### Generate a local infrastructure (docker compose)
+Scaffolds a recommended local infrastructure using docker-compose.
+It will generate:
+- a Mongo database for the app
+- a Mongo database for the servable utils
+- a S3 like objects storage (Minio)
+- a LiveQueryServer
+- a Redis cache
 
 ```bash
 yo servable:docker
+```
+
+### Generate a complete backend project
+This command generates a fully fledged backend project along the local infrastructure needed to run it
+```bash
+yo servable:fullback
 ```
 
