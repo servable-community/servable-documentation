@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# FAQ
+# FAQ 💡
 
 ![logo](/img/polar-bear-4.png)
 
