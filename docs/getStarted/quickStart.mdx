@@ -6,31 +6,17 @@ import BashTabs from '@site/src/components/generic/bashTabs'
 
 # Quick Start
 
-## 1. Launch the docker-compose 
-
-Launch a complete local infrastructure to support the servable.
-
-**[docker-compose](../static/docker-compose.yaml)**
-
-```bash
-docker compose --project-name manivel -f docker-compose.app.yml
-```
-## 2. Install the generator
+## 1. Install the generator
 
 <BashTabs npm={"npm install -g generator-servable"} />
 
-<!-- ## Create a new folder 
 
-```bash
-mkdir myApp && cd myApp
-``` -->
-
-## 3. Generate a new server
+## 2. Generate a new server
 
 Generate a new servable app by running the command:
 
 ```bash
-yo servable
+yo servable:fullback
 ```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
@@ -42,10 +28,6 @@ The command also installs all necessary dependencies you need to run servable.
 ## 4. Start your server
 
 Run the development server:
-
-```bash
-cd my-app
-```
 
 <BashTabs yarn={"yarn start"} />
 
