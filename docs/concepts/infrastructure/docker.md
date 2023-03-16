@@ -161,3 +161,13 @@ services:
     networks:
       - development
 ```
+
+### Start the docker compose
+```bash
+cd .infra
+docker compose --project-name manivel -f docker-compose.app.yml
+```
+
+:::tip
+**[docker-compose](../static/docker-compose.yaml)**
+:::

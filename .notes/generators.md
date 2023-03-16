@@ -14,3 +14,11 @@ https://github.com/mokkabonna/inquirer-autocomplete-prompt
 
 
 https://medium.com/swlh/generate-microservices-quickly-with-yeoman-bc8b8453ea80
+
+https://itecnote.com/tecnote/javascript-yeoman-call-sub-generator-with-user-supplied-arguments/
+
+
+https://www.freecodecamp.org/news/creating-yeoman-generators-easily-with-yeoman-easily-cf552aef0d2f/
+
+
+https://github.com/jhipster/generator-jhipster-nodejs/tree/main/generators
