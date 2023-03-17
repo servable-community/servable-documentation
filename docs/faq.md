@@ -32,3 +32,14 @@ The Parse Dashboard allows us to change the app schema by default. Although this
 - Schema migration
 - Make the security more visible and mistakes more obvious
 - Versioning
+
+### Can I modify a protocol
+Servable's api allows you to give parameters to a protocol.
+If these parameters are not enough for your use case, let's say you want to increase the security level of a protocol's class, you can fork an existing protocol onto the app's /protocols folder
+
+```bash
+yo servable:forkprotocol
+```
+
+### How do I add an express middleware to my app?
+The *afterInit* method allows you manipulate the underlying express middleware when it has been initialized and ready. You can hook any middleware at this point.
