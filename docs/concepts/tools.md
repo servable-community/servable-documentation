@@ -12,5 +12,5 @@ It is available as an anpm dependency, and comes bundled with the Servable gener
 ### Custom installation
 
 ```bash
-yarn add @yelounak/servable-parse-engine
+yarn add @yelounak/servable-engine
 ```

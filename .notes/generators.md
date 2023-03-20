@@ -22,3 +22,9 @@ https://www.freecodecamp.org/news/creating-yeoman-generators-easily-with-yeoman-
 
 
 https://github.com/jhipster/generator-jhipster-nodejs/tree/main/generators
+
+
+https://medium.com/@nasch/building-a-code-generator-f8fd0ee1d2e3
+
+Templating
+https://ejs.co/#docs

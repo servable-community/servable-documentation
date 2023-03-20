@@ -26,8 +26,8 @@ Protocols can collide when they don't follow guidelines for naming. We recommend
 ### Can I use third party protocols?
 We encourage developers to package their protocols and share them with the community, since protocols themselves are designed to be self sufficient and separated from the app code base and other protocols, it's super easy to make an npm package and publish it publicly or on an enterprise repository. 
 
-### Why can't I modify the schema with the Parse Dashboard?
-The Parse Dashboard allows us to change the app schema by default. Although this behaviour is handy for local projects and its quick of use, we chose to use a strictly JSON based schema storage and update for these reasons:
+### Why can't I modify the schema with the Servable Dashboard?
+The Servable Dashboard allows us to change the app schema by default. Although this behaviour is handy for local projects and its quick of use, we chose to use a strictly JSON based schema storage and update for these reasons:
 - Schema computation
 - Schema migration
 - Make the security more visible and mistakes more obvious
