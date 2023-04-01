@@ -43,3 +43,27 @@ SERVABLE_SERVER_URL=http://localhost:<%= appPort %>
 # Custom variables
 
 ```
+
+
+
+|  Variable | Description | Type | Default value |  |
+|:--|:--|:--|:--|:--|
+| NODE_ENV | The node environment | string | development |  |
+| SERVABLE_APP_ID | Application id | string |  |  |
+| SERVABLE_APP_NAME | Application name | string |  |  |
+| SERVABLE_DATABASE_URI |  |  |  |  |
+| SERVER_PORT | Server port | number | 1374 |  |
+| #TODO |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+| SERVABLE_UTILS_DATABASE_URI |  |  |  |  |
+| PUBLIC_SERVER_URL |  |  |  |  |
+| SERVABLE_PUBLIC_SERVER_URL |  |  |  |  |
+| SERVABLE_SERVER_URL |  |  |  |  | 
