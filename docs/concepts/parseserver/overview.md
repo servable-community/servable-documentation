@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 import ParseLinks from '@site/src/components/parseLinks'
 
-# Parse Server
+# Overview
 
 From [Parse Server official website](https://parseplatform.org/)
 
