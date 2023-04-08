@@ -12,7 +12,7 @@ sidebar_position: 8
 Servable is tailored for protocols which are a unique and opinionated way to model and develop a server. Other Node JS frameworks are either less structured or use other opinionated templates like controllers. 
 
 ### Should I learn Parse Server before I start using Servable?
-Yes! We highly recommend being familiar with Parse Server concepts before you use Servable. We know this overhead is not perfect. We are working to integrate Parse Server's incredible features straight into Servable and use a unified API in the future. We have made a quick [guide](./concepts/parseServer.mdx) to help you grasp the most important Parse Server concepts you need. Check it out if you're a Parse newbie ;)
+Yes! We highly recommend being familiar with Parse Server concepts before you use Servable. We know this overhead is not perfect. We are working to integrate Parse Server's incredible features straight into Servable and use a unified API in the future. We have made a quick guide to help you grasp the most important Parse Server concepts you need. Check it out if you're a Parse newbie ;)
 
 <!-- ## Protocols -->
 

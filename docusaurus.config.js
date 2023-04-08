@@ -12,7 +12,7 @@ const config = {
   title: 'Servable',
   tagline: 'A protocol oriented Node JS framework',
   url: 'https://anak.io',
-  baseUrl: '/servable',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico', //https://icons8.com/icon/set/animals/plasticine
