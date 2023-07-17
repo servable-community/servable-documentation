@@ -164,7 +164,7 @@ services:
 
 ### Start the docker compose
 ```bash
-cd .infra
+cd .system
 docker compose --project-name manivel -f docker-compose.app.yml
 ```
 
