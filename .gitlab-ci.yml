@@ -43,6 +43,10 @@ stages:
 
 build_image:
   stage: build
+  only:
+    - develop
+    # - release
+    # - master
   image: docker:20.10.16
   services:
     - docker:20.10.16-dind
