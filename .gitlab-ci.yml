@@ -57,7 +57,7 @@ build_image:
     # - touch ${SHARED_PATH}/test_file
     # - docker run -v ${SHARED_PATH}:/mnt ubuntu ls /mnt
     # - mkdir -p "$MOUNT_POINT"
-    - usermod -aG docker gitlab-runner
+    # - usermod -aG docker gitlab-runner
     - docker build -t -v "$MOUNT_POINT:/mnt" $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
 # deploy:
