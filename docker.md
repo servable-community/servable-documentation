@@ -6,4 +6,5 @@ docker run --rm -p 3003:80 servable-documentation:latest
 
 
 
-DOCKER_BUILDKIT=1 docker build -t registry.tools.flotte.anak.dev/servable-documentation:latest . && docker push registry.tools.flotte.anak.dev/servable-documentation:latest
+DOCKER_BUILDKIT=1 docker build -t registry.tools.anak.dev/servable/documentation . 
+docker push registry.tools.anak.dev/servable/documentation

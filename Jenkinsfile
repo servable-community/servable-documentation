@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    imagename = "registry.tools.flotte.anak.dev/servable-documentation"
-    registry = "registry.tools.flotte.anak.dev"
+    imagename = "registry.tools.anak.dev/servable-documentation"
+    registry = "registry.tools.anak.dev"
     registryCredential = 'registry.dev.flotte'
     dockerImage = ''
   }
