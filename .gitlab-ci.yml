@@ -22,7 +22,7 @@ variables:
   # These are usually specified by the entrypoint, however the
   # Kubernetes executor doesn't run entrypoints
   # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/4125
-  DOCKER_TLS_VERIFY: 1
+  DOCKER_TLS_VERIFY: 0
   DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
 
 stages:
