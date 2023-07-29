@@ -24,6 +24,10 @@ variables:
   # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/4125
   DOCKER_TLS_VERIFY: 0
   DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+  # SHARED_PATH: /builds/shared/$CI_PROJECT_PATH
+  MOUNT_POINT: /builds/$CI_PROJECT_PATH/mnt
+
+# https://gitlab.com/gitlab-org/gitlab-foss/-/issues/41227
 
 stages:
   # - test
@@ -49,7 +53,11 @@ build_image:
     - docker info
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
-    - docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    # - mkdir -p ${SHARED_PATH}
+    # - touch ${SHARED_PATH}/test_file
+    # - docker run -v ${SHARED_PATH}:/mnt ubuntu ls /mnt
+    - mkdir -p "$MOUNT_POINT"
+    - docker build -t -v "$MOUNT_POINT:/mnt" $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
 # deploy:
 #   stage: deploy
