@@ -44,6 +44,8 @@ build_image:
   services:
     - docker:20.10.16-dind
   before_script:
+    # - sudo chown -R `whoami`: .
+    - sudo chown -R gitlab-runner:gitlab-runner .
     - docker info
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
