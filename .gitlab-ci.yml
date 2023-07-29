@@ -1,6 +1,6 @@
 variables:
   IMAGE_NAME: servable/documentation
-  IMAGE_TAG: 0.1
+  IMAGE_TAG: "0.1"
 
 stages:
   # - test
