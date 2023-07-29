@@ -25,7 +25,7 @@ variables:
   DOCKER_TLS_VERIFY: 0
   DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
   # SHARED_PATH: /builds/shared/$CI_PROJECT_PATH
-  MOUNT_POINT: /builds/$CI_PROJECT_PATH/mnt
+  # MOUNT_POINT: /builds/$CI_PROJECT_PATH/mnt
 
 # https://gitlab.com/gitlab-org/gitlab-foss/-/issues/41227
 
@@ -56,7 +56,8 @@ build_image:
     # - mkdir -p ${SHARED_PATH}
     # - touch ${SHARED_PATH}/test_file
     # - docker run -v ${SHARED_PATH}:/mnt ubuntu ls /mnt
-    - mkdir -p "$MOUNT_POINT"
+    # - mkdir -p "$MOUNT_POINT"
+    - usermod -aG docker gitlab-runner
     - docker build -t -v "$MOUNT_POINT:/mnt" $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
 # deploy:
