@@ -24,9 +24,9 @@ build_image:
   stage: build
   only: #https://stackoverflow.com/questions/52830653/how-to-run-gitlab-ci-only-for-specific-branches-and-tags
     - master
-  image: $DEFAULT_DOCKER_IMAGE
+  image: $CI_DOCKER_IMAGE
   services:
-    - $DEFAULT_DOCKER_IMAGE_DIND
+    - $CI_DOCKER_IMAGE_DIND
   before_script:
     - docker info
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
