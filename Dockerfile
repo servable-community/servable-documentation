@@ -46,4 +46,5 @@ FROM nginx:stable-alpine as deploy
 WORKDIR /home/node
 # Copy what we've installed/built from production
 # COPY --chown=node:node --from=production /home/node/build /usr/share/nginx/html/
+# https://github.com/flyway/flyway/issues/3521
 COPY --from=production /home/node/build /usr/share/nginx/html/
