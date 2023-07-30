@@ -2,7 +2,7 @@
 
 variables:
   IMAGE_NAME: servable/documentation
-  IMAGE_TAG: "0.1"
+  IMAGE_TAG: latest
   # When using dind service, you must instruct Docker to talk with
   # the daemon started inside of the service. The daemon is available
   # with a network connection instead of the default
