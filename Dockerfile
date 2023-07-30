@@ -1,3 +1,6 @@
+# https://github.com/nodejs/docker-node/issues/740
+
+
 ## Base ########################################################################
 # Use a larger node image to do the build for native deps (e.g., gcc, python)
 FROM node:lts as base
@@ -42,4 +45,5 @@ RUN yarn build
 FROM nginx:stable-alpine as deploy
 WORKDIR /home/node
 # Copy what we've installed/built from production
-COPY --chown=node:node --from=production /home/node/build /usr/share/nginx/html/
+# COPY --chown=node:node --from=production /home/node/build /usr/share/nginx/html/
+COPY --from=production /home/node/build /usr/share/nginx/html/

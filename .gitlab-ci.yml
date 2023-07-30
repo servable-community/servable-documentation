@@ -63,5 +63,5 @@ build_image:
     # - docker run -v ${SHARED_PATH}:/mnt ubuntu ls /mnt
     # - mkdir -p "$MOUNT_POINT"
     # - usermod -aG docker gitlab-runner
-    - docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    - DOCKER_BUILDKIT=1 docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
