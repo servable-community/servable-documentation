@@ -1,3 +1,5 @@
+# https://docs.gitlab.com/ee/ci/yaml/
+
 variables:
   IMAGE_NAME: servable/documentation
   IMAGE_TAG: "0.1"
@@ -61,5 +63,5 @@ build_image:
     # - docker run -v ${SHARED_PATH}:/mnt ubuntu ls /mnt
     # - mkdir -p "$MOUNT_POINT"
     # - usermod -aG docker gitlab-runner
-    - docker build -t -v "$MOUNT_POINT:/mnt" $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    - docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
