@@ -1,0 +1,35 @@
+# https://docs.gitlab.com/ee/ci/yaml/
+
+variables:
+  IMAGE_NAME: servable/documentation
+  IMAGE_TAG: latest
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_TLS_VERIFY: 1
+  DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+
+stages:
+  # - test
+  - build
+
+# run_tests:
+#   stage: test
+#   image: python:3.9-slim-buster
+#   before_script:
+#     - apt-get update && apt-get install make
+#   script:
+#     - make test
+
+build_image:
+  stage: build
+  only: #https://stackoverflow.com/questions/52830653/how-to-run-gitlab-ci-only-for-specific-branches-and-tags
+    - master
+  image: $CI_DOCKER_IMAGE
+  services:
+    - $CI_DOCKER_IMAGE_DIND
+  before_script:
+    - docker info
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - DOCKER_BUILDKIT=1 docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+    - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
