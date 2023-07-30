@@ -7,9 +7,9 @@ ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
 
 # We'll run the app as the `node` user, so put it in their home directory
-WORKDIR /home/node/app
+WORKDIR /home/node
 # Copy the source code over
-COPY --chown=node:node . /home/node/app/
+COPY --chown=node:node . /home/node/
 
 ## Development #################################################################
 # Define a development target that installs devDeps and runs in dev mode
@@ -18,11 +18,11 @@ FROM base as development
 # Switch to the node user vs. root
 USER node
 
-WORKDIR /home/node/app
+WORKDIR /home/node
 # Install (not ci) with dependencies, and for Linux vs. Linux Musl (which we use for -alpine)
 RUN yarn
 
-# RUN mkdir -p /home/node/app/node_modules && chmod -R 777 /home/node/app/node_modules
+# RUN mkdir -p /home/node/node_modules && chmod -R 777 /home/node/node_modules
 
 # Expose port 3000
 EXPOSE 3000
@@ -32,14 +32,14 @@ CMD ["yarn", "start"]
 ## Production ##################################################################
 # Also define a production target which doesn't use devDeps
 FROM base as production
-WORKDIR /home/node/app
-COPY --chown=node:node --from=development /home/node/app/node_modules /home/node/app/node_modules
+WORKDIR /home/node
+COPY --chown=node:node --from=development /home/node/node_modules /home/node/node_modules
 # Build the Docusaurus app
 RUN yarn build
 
 ## Deploy ######################################################################
 # Use a stable nginx image
 FROM nginx:stable-alpine as deploy
-WORKDIR /home/node/app
+WORKDIR /home/node
 # Copy what we've installed/built from production
-COPY --chown=node:node --from=production /home/node/app/build /usr/share/nginx/html/
+COPY --chown=node:node --from=production /home/node/build /usr/share/nginx/html/
