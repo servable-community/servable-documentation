@@ -1,9 +1,11 @@
 FROM node:lts as base
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
+
+USER node
 WORKDIR /app
 COPY . ./
-RUN yarn install
+RUN yarn
 RUN yarn build
 
 FROM nginx:stable-alpine
