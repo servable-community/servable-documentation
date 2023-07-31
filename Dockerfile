@@ -48,3 +48,4 @@ WORKDIR /home/node
 # COPY --chown=node:node --from=production /home/node/build /usr/share/nginx/html/
 # https://github.com/flyway/flyway/issues/3521
 COPY --from=production /home/node/build /usr/share/nginx/html/
+CMD ["ulimit", "-n", "200000"]
