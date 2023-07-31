@@ -1,58 +1,17 @@
-# https://github.com/nodejs/docker-node/issues/740
-
-
-## Base ########################################################################
-# Use a larger node image to do the build for native deps (e.g., gcc, python)
 FROM node:lts as base
-# RUN ulimit -n 20000
-# CMD ["/bin/bash"]
-
-# Reduce npm log spam and colour during install within Docker
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
-
-# We'll run the app as the `node` user, so put it in their home directory
-USER node
-WORKDIR /home/node/app
-# Copy the source code over
-COPY --chown=node:node . /home/node/app/
-
-## Development #################################################################
-# Define a development target that installs devDeps and runs in dev mode
-FROM base as development
-
-# Switch to the node user vs. root
-USER node
-
-WORKDIR /home/node/app
-# Install (not ci) with dependencies, and for Linux vs. Linux Musl (which we use for -alpine)
-RUN yarn
-
-# RUN mkdir -p /home/node/app/node_modules && chmod -R 777 /home/node/app/node_modules
-
-# Expose port 3000
-EXPOSE 3000
-# Start the app in debug mode so we can attach the debugger
-CMD ["yarn", "start"]
-
-## Production ##################################################################
-# Also define a production target which doesn't use devDeps
-FROM base as production
-USER node
-WORKDIR /home/node/app
-COPY --chown=node:node --from=development /home/node/app/node_modules /home/node/app/node_modules
-# Build the Docusaurus app
+WORKDIR /app
+COPY . ./
+RUN yarn install
 RUN yarn build
 
-## Deploy ######################################################################
-# Use a stable nginx image
-FROM nginx:stable-alpine as deploy
-# RUN ulimit -n 20000
-# CMD ["/bin/bash"]
-
-USER node
+FROM nginx:stable-alpine
+COPY nginx.conf /etc/nginx/conf.d/configfile.template
+ENV PORT 3000
+ENV HOST 0.0.0.0
 WORKDIR /home/node/app
-# Copy what we've installed/built from production
-# COPY --chown=node:node --from=production /home/node/app/build /usr/share/nginx/html/
-# https://github.com/flyway/flyway/issues/3521
-COPY --from=production /home/node/app/build /usr/share/nginx/html/
+RUN sh -c "envsubst '\$PORT'  < /etc/nginx/conf.d/configfile.template > /etc/nginx/conf.d/default.conf"
+COPY --from=base /app/build /usr/share/nginx/html
+EXPOSE 3000
+CMD ["nginx", "-g", "daemon off;"]
