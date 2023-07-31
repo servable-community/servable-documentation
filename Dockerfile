@@ -4,8 +4,8 @@
 ## Base ########################################################################
 # Use a larger node image to do the build for native deps (e.g., gcc, python)
 FROM node:lts as base
-RUN ulimit -n 20000
-CMD ["/bin/bash"]
+# RUN ulimit -n 20000
+# CMD ["/bin/bash"]
 
 # Reduce npm log spam and colour during install within Docker
 ENV NPM_CONFIG_LOGLEVEL=warn
@@ -46,7 +46,7 @@ RUN yarn build
 # Use a stable nginx image
 FROM nginx:stable-alpine as deploy
 RUN ulimit -n 20000
-CMD ["/bin/bash"]
+# CMD ["/bin/bash"]
 
 WORKDIR /home/node
 # Copy what we've installed/built from production
