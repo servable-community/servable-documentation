@@ -1,5 +1,6 @@
 # Dockerfile built by Jack Crane. - https://jackcrane.rocks
 # Build step
+# https://dev.to/cindyledev/how-to-dockerize-a-docusaurus-v2-application-fp7#comment-22np8
 
 FROM node:16 AS build
 WORKDIR /usr/src/app
