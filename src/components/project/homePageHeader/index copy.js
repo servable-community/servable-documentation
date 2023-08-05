@@ -8,9 +8,11 @@ export default () => {
   const { siteConfig } = useDocusaurusContext()
   return <div className={`
         bg-gradient-to-r         
-        bg-opacity-20   
-        border-b-4
-       border-b-[#E76F51]        
+        from-[#E76F51]
+        via-[#E76F51]
+        to-[#E76F51]
+        bg-opacity-20        
+       border-b-[#FAF3DD]        
         `}>
     <div class={`
         grid
@@ -20,10 +22,10 @@ export default () => {
         md:px-6      
         py-4`}>
       <div class={`
-          text-right
+          text-right  
           flex
-          justify-center
-          align-middle
+          justify-center      
+          align-middle                
           h-full
         `}>
         {/* <LogoAnimated /> */}
@@ -39,8 +41,8 @@ export default () => {
           text-left
           pt-12              
         `}>
-          <h1 className='text-9xl text-[#E76F51]'>{siteConfig.title}</h1>
-          <p className={`font-bold text-lg `}>
+          <h1 className='text-9xl text-[#FAF3DD]'>{siteConfig.title}</h1>
+          <p className={`font-bold text-lg text-[#FAF3DD]`}>
             {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
           </p>
           <div className={``}>

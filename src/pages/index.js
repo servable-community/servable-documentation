@@ -13,9 +13,11 @@ export default () => {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomePageHeader />
-      <main className='pb-16'>
-        <Protocoled />
+      <div className='bg-slate-200 h-[1px] w-full'></div>
+      <main className='pb-16 pt-8'>
         <HomepageFeatures />
+
+        <Protocoled />
         <Sample />
         <SponsorUs />
       </main>
