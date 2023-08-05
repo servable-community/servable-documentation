@@ -18,7 +18,7 @@ const config = {
   favicon: 'img/favicon.ico', //https://icons8.com/icon/set/animals/plasticine
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),
-
+    'docusaurus-plugin-matomo',
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
@@ -99,6 +99,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      matomo: {
+        matomoUrl: 'https://your.matomo.instance/',
+        siteId: 'ID',
+        phpLoader: 'matomo.php',
+        jsLoader: 'matomo.js',
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
