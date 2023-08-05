@@ -6,11 +6,7 @@ import LogoStatic from '../logo/static'
 
 export default () => {
   const { siteConfig } = useDocusaurusContext()
-  return <div className={`
-        bg-gradient-to-r         
-        bg-opacity-20   
-        border-b-4
-       border-b-[#E76F51]        
+  return <div className={`             
         `}>
     <div class={`
         grid
