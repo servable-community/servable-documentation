@@ -37,7 +37,7 @@ export default () => {
         `}>
           <h1 className='text-9xl text-[#E76F51]'>{siteConfig.title}</h1>
           <p className={`font-bold text-lg `}>
-            {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
+            {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server! 🐻`}
           </p>
           <div className={``}>
             <Link
