@@ -10,7 +10,7 @@ export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Hello from the ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomePageHeader />
       <div className='bg-slate-200 dark:bg-slate-800 h-[1px] w-full'></div>
