@@ -43,3 +43,7 @@ yo servable:forkprotocol
 
 ### How do I add an express middleware to my app?
 The *afterInit* method allows you manipulate the underlying express middleware when it has been initialized and ready. You can hook any middleware at this point.
+
+
+### Play with gitlab
+Blabala
