@@ -24,7 +24,7 @@ build_image:
   only: #https://stackoverflow.com/questions/52830653/how-to-run-gitlab-ci-only-for-specific-branches-and-tags
     # - develop
     # - release
-    - master
+    - main
   image: docker:20.10.16
   services:
     - docker:20.10.16-dind
