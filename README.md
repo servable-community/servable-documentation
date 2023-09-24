@@ -1,7 +1,9 @@
-# Servable Generator
+# Servable Documentation
 
 > [!WARNING]
 > Servable is still experimental and its api may change in the future.
+
+Servable documentation source code for [https://documentation.servable.app](https://documentation.servable.app)
 
 ![logo](/static/img/polar-bear-4.png)
 
