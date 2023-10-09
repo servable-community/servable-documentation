@@ -21,21 +21,21 @@ export default () => {
           justify-center
           align-middle
           h-full
+          
         `}>
         {/* <LogoAnimated /> */}
-        <LogoStatic />
+        <LogoStatic size={'m'} />
       </div>
       <div class={`                
           flex
-          justify-center       
-          p-8
+          justify-center                 
         `}>
         <div class={`
           justify-center
           text-left
           pt-12              
         `}>
-          <h1 className='text-9xl text-[#E76F51]'>{siteConfig.title}</h1>
+          <h1 className='text-6xl text-[#E76F51]'>{siteConfig.title}</h1>
           <p className={`font-bold text-lg `}>
             {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server! 🐻`}
           </p>

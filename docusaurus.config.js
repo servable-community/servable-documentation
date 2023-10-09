@@ -81,14 +81,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/yelounak/generator-servable-parse/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/servable-community/generator-servable-parse/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/yelounak/generator-servable-parse/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/servable-community/generator-servable-parse/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -172,7 +172,7 @@ const config = {
           //   to: '/blog', label: 'Blog', position: 'left'
           // },
           {
-            href: 'https://github.com/yelounak/generator-servable-parse',
+            href: 'https://github.com/servable-community/generator-servable-parse',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -234,7 +234,7 @@ const config = {
           //     },
           //     // {
           //     //   label: 'GitHub',
-          //     //   href: 'https://github.com/yelounak/servable-parse',
+          //     //   href: 'https://github.com/servable-community/servable-parse',
           //     // },
           //   ],
           // },

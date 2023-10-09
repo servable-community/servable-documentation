@@ -4,8 +4,8 @@ title: To refactor or not
 authors:
   name: Aboubacar Doucoure
   title: Creator of Servable
-  url: https://github.com/yelounak
-  image_url: https://github.com/yelounak.png
+  url: https://github.com/servable-community
+  image_url: https://github.com/servable-community.png
 tags: [servable, nodejs, parseserver]
 ---
 

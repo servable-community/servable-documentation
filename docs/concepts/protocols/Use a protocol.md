@@ -53,7 +53,7 @@ export default class ServableApp extends Servable.App.Object {
         {
             id: 'apptunnelable',
             module: {
-                '@yelounak/apptunnelable-parse-server': '*'
+                '@servable-community/apptunnelable-parse-server': '*'
             },
             params: {
                 tunnelUrl: process.env.SERVABLE_EXTERNAL_TUNNEL,
@@ -85,7 +85,7 @@ export default class ServableApp extends Servable.App.Object {
             name: 'publishable',
             slug: 'ps',
             module: {
-                '@yelounak/publishable-parse-server': '*'
+                '@servable-community/publishable-parse-server': '*'
             },
             version: '*',
             params: {

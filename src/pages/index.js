@@ -16,7 +16,6 @@ export default () => {
       <div className='bg-slate-200 dark:bg-slate-800 h-[1px] w-full'></div>
       <main className='pb-16 pt-8'>
         <HomepageFeatures />
-
         <Protocoled />
         <Sample />
         <SponsorUs />

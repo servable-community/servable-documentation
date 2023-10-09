@@ -59,7 +59,7 @@ export default () => {
       <p className={``}>
         <h3>3. Add protocols to your class</h3>
         <CodeBlock language="language-bash">
-          {"yarn add @yelounak/localable\nyarn add @yelounak/countryable"}
+          {"yarn add @servable-community/localable\nyarn add @servable-community/countryable"}
         </CodeBlock>
         <CodeBlock language="js">
           {`export default class Creation extends Servable.App.Object {

@@ -64,7 +64,7 @@ Servable comes bundled with Parse Server that sets up a working set of tables th
 
 ## License
 
-MIT © [yelounak](https://github.com/yelounak)
+MIT © [servable-community](https://github.com/servable-community)
 
 
 
