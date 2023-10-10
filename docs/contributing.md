@@ -26,7 +26,7 @@ All of the documentation for the project is housed within the `docs/docs` folder
 
 It is highly encouraged to read through the following resources before contributing.
 
-- [Website](https://servablejs.com)
+- [Website](https://servablecommunity.com)
 
 ## How Can I Contribute?
 

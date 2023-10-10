@@ -4,14 +4,14 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
-const organizationName = "anak"
+const organizationName = "servablecommunity"
 const projectName = "servable"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Servable',
   tagline: 'A protocol oriented Node JS framework',
-  url: 'https://anak.io',
+  url: 'https://servablecommunity.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -239,7 +239,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} anak Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Servable Community. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
