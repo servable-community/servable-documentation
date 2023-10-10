@@ -15,8 +15,6 @@ Servable is still experimental and its api may change in the future.
 <img src="/img/grasshopper.png" alt="protocols" style={{ width:'200px' }}/> -->
 
 
-
-
 **Servable** is a Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.
 
 Servable at its core is a server template that uses the servable-engine to orchestrate the different protocols used in an application. Servable streamlines the server development by separating every "groupable" logic to be a protocol, so that it is organically extracted from the base code and possibly migrated into its own package. By doing so, Servable enforces a clear separation of concerns pattern out of the box. 
