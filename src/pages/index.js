@@ -7,6 +7,7 @@ import Sample from '../components/project/sample'
 import Protocoled from '../components/project/protocoled'
 import SponsorUs from '../components/project/sponsorUs'
 import ExtremeRefactoring from '../components/project/extremeRefactoring'
+import HomepageFeatures2 from '../components/project/homepageFeatures2'
 export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
@@ -17,7 +18,9 @@ export default () => {
       {/* <div className='bg-slate-200 dark:bg-slate-800 h-[1px] w-full'></div> */}
       <main className='pb-16 pt-8'>
         <HomepageFeatures />
+        <HomepageFeatures2 />
         <ExtremeRefactoring />
+
         <Protocoled />
         <Sample />
         <SponsorUs />

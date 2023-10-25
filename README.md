@@ -75,3 +75,8 @@ MIT © [servable-community](https://github.com/servable-community)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+Resources
+https://thenounproject.com/icon/seed-1025551/
+https://thenounproject.com/icon/ant-3930319/
+https://thenounproject.com/icon/seed-3722556/
+https://thenounproject.com/icon/steps-5903715/
