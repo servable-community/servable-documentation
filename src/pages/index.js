@@ -6,6 +6,7 @@ import HomePageHeader from '../components/project/homePageHeader'
 import Sample from '../components/project/sample'
 import Protocoled from '../components/project/protocoled'
 import SponsorUs from '../components/project/sponsorUs'
+import ExtremeRefactoring from '../components/project/extremeRefactoring'
 export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
@@ -13,9 +14,10 @@ export default () => {
       title={`Hello from the ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomePageHeader />
-      <div className='bg-slate-200 dark:bg-slate-800 h-[1px] w-full'></div>
+      {/* <div className='bg-slate-200 dark:bg-slate-800 h-[1px] w-full'></div> */}
       <main className='pb-16 pt-8'>
         <HomepageFeatures />
+        <ExtremeRefactoring />
         <Protocoled />
         <Sample />
         <SponsorUs />

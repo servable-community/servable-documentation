@@ -9,9 +9,7 @@ export default () => {
   return <div className={`             
         `}>
     <div class={`
-        grid
-        grid-cols-1
-        md:grid-cols-2
+        
         px-6
         md:px-6      
         py-4`}>
@@ -21,10 +19,9 @@ export default () => {
           justify-center
           align-middle
           h-full
-          
         `}>
         {/* <LogoAnimated /> */}
-        <LogoStatic size={'m'} />
+        <LogoStatic size={'s'} />
       </div>
       <div class={`                
           flex
@@ -32,10 +29,13 @@ export default () => {
         `}>
         <div class={`
           justify-center
-          text-left
-          pt-12              
+          text-center
+          pt-8     
+          max-w-md
         `}>
-          <h1 className='text-6xl text-[#E76F51]'>{siteConfig.title}</h1>
+          <h1 className='text-6xl text-gray-600'>
+            {`${siteConfig.title}`} <i>framework</i>
+          </h1>
           <p className={`font-bold text-lg `}>
             {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server! 🐻`}
           </p>
@@ -43,7 +43,7 @@ export default () => {
             <Link
               className="button button--secondary button--lg"
               to="/docs/getstarted/overview">
-              Get started
+              Documentation
             </Link>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default () => {
         `}>
           <h2 className=''>{`Sponsor us`}</h2>
           <p className={``}>
-            {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
+            {`We need help!`}
           </p>
           <div className={``}>
             <Link
