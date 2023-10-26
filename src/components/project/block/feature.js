@@ -10,7 +10,8 @@ export default ({ Svg, title, description }) => {
       <div className="text--center">
         <Svg
           fill={`${isDarkTheme ? 'white' : 'black'}`}
-          className={`          
+          className={` 
+          p-6         
           w-[180px]
           h-[180px]`}
           role="img" />

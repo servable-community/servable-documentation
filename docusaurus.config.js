@@ -150,6 +150,11 @@ const config = {
             position: 'right',
             label: 'Example',
           },
+          {
+            position: 'right',
+            label: 'Protocols Registry',
+            href: 'https://registry.servablecommunity.com',
+          },
           // {
           //   type: 'doc',
           //   docId: 'protocolsLibrary/overview',
@@ -178,7 +183,7 @@ const config = {
           //   to: '/blog', label: 'Blog', position: 'left'
           // },
           {
-            href: 'https://github.com/servable-community/generator-servable',
+            href: 'https://github.com/servable-community',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',

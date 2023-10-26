@@ -3,7 +3,7 @@ import React from 'react';
 export default [
   {
     title: 'Automatic schema computation',
-    Svg: require('@site/static/img/noun-dots-317790.svg').default,
+    Svg: require('@site/static/img/noun-brackets-1087150.svg').default,
     description: (
       <>
         Servable automatically merges the user defined app schema with the protocols' schema.
