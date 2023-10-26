@@ -80,3 +80,7 @@ https://thenounproject.com/icon/seed-1025551/
 https://thenounproject.com/icon/ant-3930319/
 https://thenounproject.com/icon/seed-3722556/
 https://thenounproject.com/icon/steps-5903715/
+https://thenounproject.com/icon/configuration-5508509/
+https://thenounproject.com/icon/api-6001992/
+https://thenounproject.com/icon/stack-4935131/
+https://thenounproject.com/icon/container-1800943/

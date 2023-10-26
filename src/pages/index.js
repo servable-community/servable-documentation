@@ -8,6 +8,8 @@ import Protocoled from '../components/project/protocoled'
 import SponsorUs from '../components/project/sponsorUs'
 import ExtremeRefactoring from '../components/project/extremeRefactoring'
 import HomepageFeatures2 from '../components/project/homepageFeatures2'
+import HomepageFeatures3 from '../components/project/homepageFeatures3'
+import EverythingIsAProtocol from '../components/project/everythingIsAProtocol'
 export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
@@ -19,6 +21,8 @@ export default () => {
       <main className='pb-16 pt-8'>
         <HomepageFeatures />
         <HomepageFeatures2 />
+        <EverythingIsAProtocol />
+        <HomepageFeatures3 />
         <ExtremeRefactoring />
 
         <Protocoled />

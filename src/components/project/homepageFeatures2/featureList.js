@@ -6,7 +6,7 @@ export default [
     Svg: require('@site/static/img/seed.svg').default,
     description: (
       <>
-        Servable is a Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.
+        Servable Automatic Seed is an easy way to seed Servable classes. It was built from the ground up to respect the protocol lifecycle and separation of concerns. Every protocol can define config entries that drive its behaviour at run time, including the app protocol.
       </>
     ),
   },
@@ -15,16 +15,17 @@ export default [
     Svg: require('@site/static/img/noun-steps-5903715.svg').default,
     description: (
       <>
-        Servable streamlines the server development by separating every "groupable" logic to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package
+        Schemas are automatically migrated based on a desired version. No need for custom scripts or complex data management. Dedicated <i>up</i> and <i>down</i> allow for granular entry manipulation.
       </>
     ),
   },
   {
     title: 'Advanced config per protocol',
-    Svg: require('@site/static/img/noun-ant-teamwork-2773996.svg').default,
+    Svg: require('@site/static/img/noun-configuration-5508509.svg').default,
     description: (
       <>
-        Extend your server by using protoocols made by the community. Add emailing, versionning, or video capacity with one simple declaration. Handle schema migrations and rollbacks automatically.
+        Servable config adds the ability to change the behaviour and appearance of your Servable app without  redeploying your server or requiring users to update their app.
+        Every protocol can manage its own configuration.
       </>
     ),
   },
