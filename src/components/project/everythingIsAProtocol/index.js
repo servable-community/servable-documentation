@@ -38,7 +38,7 @@ export default () => {
           max-w-4xl
         `}>
           <h2 className='text-4xl'>
-            {`Everything is a 🐻 protocol 🐻`} <i></i>
+            {`Everything is a protocol 🐝 🍯`} <i></i>
           </h2>
           <p className={`text-lg `}>
             Servable was built from the ground up to use protocols in all ways possible. The <b>Servable app</b> itself is a protocol (app protocol). The Servable engine uses core protocols like manualable.
