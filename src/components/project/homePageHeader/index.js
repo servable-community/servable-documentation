@@ -9,7 +9,8 @@ export default () => {
   return <div className={`             
         `}>
     <div class={`
-        
+        md:mt-16
+        md:mb-16
         px-6
         md:px-6      
         py-4`}>
@@ -33,7 +34,7 @@ export default () => {
           pt-8     
           max-w-md
         `}>
-          <h1 className='text-6xl text-gray-600 dark:text-gray-200'>
+          <h1 className='text-6xl'>
             {`${siteConfig.title}`} <i>framework</i>
           </h1>
           <p className={`font-bold text-lg `}>

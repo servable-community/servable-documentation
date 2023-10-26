@@ -84,3 +84,4 @@ https://thenounproject.com/icon/configuration-5508509/
 https://thenounproject.com/icon/api-6001992/
 https://thenounproject.com/icon/stack-4935131/
 https://thenounproject.com/icon/container-1800943/
+https://worldvectorlogo.com/logo/parse-1
