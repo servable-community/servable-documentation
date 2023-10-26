@@ -9,7 +9,7 @@ import SponsorUs from '../components/project/sponsorUs'
 import ExtremeRefactoring from '../components/project/extremeRefactoring'
 import HomepageFeatures2 from '../components/project/homepageFeatures2'
 import HomepageFeatures3 from '../components/project/homepageFeatures3'
-// import HomepageFeatures4 from '../components/project/homepageFeatures4'
+import HomepageFeatures4 from '../components/project/homepageFeatures4'
 import EverythingIsAProtocol from '../components/project/everythingIsAProtocol'
 export default () => {
   const { siteConfig } = useDocusaurusContext()
@@ -25,7 +25,7 @@ export default () => {
         <EverythingIsAProtocol />
         <HomepageFeatures3 />
         <ExtremeRefactoring />
-        {/* <HomepageFeatures4 /> */}
+        <HomepageFeatures4 />
         <Protocoled />
         <Sample />
         <SponsorUs />

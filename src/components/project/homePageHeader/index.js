@@ -2,7 +2,7 @@ import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
 // import LogoAnimated from '../logo/animated'
-import LogoStatic from '../logo/static'
+import LogoStatic from '../logo/static/index.svg'
 
 export default () => {
   const { siteConfig } = useDocusaurusContext()
@@ -38,12 +38,12 @@ export default () => {
             {`${siteConfig.title}`} <i>framework</i>
           </h1>
           <p className={`font-bold text-lg `}>
-            {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of protocols.\n Get ready to change the way you code your server!`}
+            {`A Node JS framework built on top of Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of 🐝 protocols.\n Get ready to change the way you code your server!`}
           </p>
           <div className={`grid grid-cols-2 space-x-6`}>
             <Link
               className="button button--primary button--lg"
-              to="/docs/getstarted/overview">
+              to="/docs/getstarted/quickStart">
               Quick Start
             </Link>
             <Link

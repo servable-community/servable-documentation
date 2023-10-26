@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Code of conduct
 
-![logo](/img/polar-bear-4.png)
+![logo](/img/icon.svg)
 
 Contributor Covenant Code of Conduct
 

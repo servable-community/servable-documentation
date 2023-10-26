@@ -2,6 +2,15 @@ import React from 'react';
 
 export default [
   {
+    title: 'Built on top of Parse Server and Express JS',
+    Svg: require('@site/static/img/parse-black-padded.svg').default,
+    description: (
+      <>
+        Servable uses the open source Parse Server behind the scenes. The Servable.Object contains the same APIs as the Parse.Object. You can use everything Parse Server already offers.
+      </>
+    ),
+  },
+  {
     title: 'Automatic class and protocol seed',
     Svg: require('@site/static/img/seed.svg').default,
     description: (
@@ -10,15 +19,7 @@ export default [
       </>
     ),
   },
-  {
-    title: 'Automatic schema migration per protocol',
-    Svg: require('@site/static/img/noun-steps-5903715.svg').default,
-    description: (
-      <>
-        Schemas are automatically migrated based on a desired version. No need for custom scripts or complex data management. Dedicated <i>up</i> and <i>down</i> allow for granular entry manipulation.
-      </>
-    ),
-  },
+
   {
     title: 'Advanced config per protocol',
     Svg: require('@site/static/img/noun-configuration-5508509.svg').default,

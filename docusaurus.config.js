@@ -134,6 +134,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'commands/install',
+            position: 'right',
+            label: 'CLI Commands',
+          },
+          {
+            type: 'doc',
             docId: 'reference/overview',
             position: 'right',
             label: 'Reference',
@@ -144,12 +150,12 @@ const config = {
             position: 'right',
             label: 'Example',
           },
-          {
-            type: 'doc',
-            docId: 'protocolsLibrary/overview',
-            position: 'right',
-            label: 'Protocols Library',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'protocolsLibrary/overview',
+          //   position: 'right',
+          //   label: 'Protocols Library',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'protocolsLibrary/overview',

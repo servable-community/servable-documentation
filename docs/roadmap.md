@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Roadmap
 
-![logo](/img/polar-bear-4.png)
+![logo](/img/icon.svg)
 Ongoing
 ```mermaid
 %%{init: { 'logLevel': 'debug', 'theme': 'dark' } }%%

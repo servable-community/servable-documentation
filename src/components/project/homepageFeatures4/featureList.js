@@ -2,29 +2,30 @@ import React from 'react';
 
 export default [
   {
-    title: 'Built on top of Parse Server and Express JS',
-    Svg: require('@site/static/img/parse-black-padded.svg').default,
+    title: 'Automatic schema computation',
+    Svg: require('@site/static/img/noun-dots-317790.svg').default,
     description: (
       <>
-        Servable uses the open source Parse Server behind the scenes. The Servable.Object contains the same APIs as the Parse.Object. You can use everything Parse Server already offers.
+        Servable automatically merges the user defined app schema with the protocols' schema.
       </>
     ),
   },
   {
-    title: 'TODO',
-    Svg: require('@site/static/img/noun-container-1800943.svg').default,
+    title: 'Automatic schema migration per protocol',
+    Svg: require('@site/static/img/noun-steps-5903715.svg').default,
     description: (
       <>
-        TODO
+        Schemas are automatically migrated based on a desired version. No need for custom scripts or complex data management. Dedicated <i>up</i> and <i>down</i> allow for granular entry manipulation.
       </>
     ),
   },
+
   {
-    title: 'TODO',
-    Svg: require('@site/static/img/noun-stack-4935131.svg').default,
+    title: 'Advanced schema staging for verification',
+    Svg: require('@site/static/img/noun-release-5004142.svg').default,
     description: (
       <>
-        TODO
+        Servable proposes a rolling deployment using an arbiter so that you don't mistakenly put undesired schema in production. When using this mode, both a /servable and a /servablestaging endpoints are exposed with separate databases for testing.
       </>
     ),
   },

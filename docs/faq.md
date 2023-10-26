@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # FAQ 💡
 
-![logo](/img/polar-bear-4.png)
+![logo](/img/icon.svg)
 
 <!-- ## Servable -->
 

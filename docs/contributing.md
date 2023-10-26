@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Contribution guide
 
-![logo](/img/polar-bear-4.png)
+![logo](/img/icon.svg)
 
  Contributing to Servable
 
