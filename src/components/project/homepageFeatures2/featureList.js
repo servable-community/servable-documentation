@@ -22,7 +22,7 @@ export default [
 
   {
     title: 'Advanced config per protocol',
-    Svg: require('@site/static/img/noun-settings-6222283.svg').default,
+    Svg: require('@site/static/img/noun-settings-1269041.svg').default,
     description: (
       <>
         Servable config adds the ability to change the behaviour and appearance of your Servable app without  redeploying your server or requiring users to update their app.

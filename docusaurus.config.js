@@ -132,12 +132,12 @@ const config = {
             position: 'right',
             label: 'Documentation',
           },
-          {
-            type: 'doc',
-            docId: 'commands/install',
-            position: 'right',
-            label: 'CLI Commands',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'commands/install',
+          //   position: 'right',
+          //   label: 'CLI Commands',
+          // },
           {
             type: 'doc',
             docId: 'reference/overview',
