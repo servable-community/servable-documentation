@@ -132,12 +132,12 @@ const config = {
             position: 'right',
             label: 'Documentation',
           },
-          {
-            type: 'doc',
-            docId: 'commands/install',
-            position: 'right',
-            label: 'CLI Commands',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'commands/install',
+          //   position: 'right',
+          //   label: 'CLI Commands',
+          // },
           {
             type: 'doc',
             docId: 'reference/overview',
@@ -150,12 +150,11 @@ const config = {
             position: 'right',
             label: 'Example',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'protocolsLibrary/overview',
-          //   position: 'right',
-          //   label: 'Protocols Library',
-          // },
+          {
+            position: 'right',
+            label: 'Protocols Registry',
+            href: 'https://registry.servablecommunity.com',
+          },
           // {
           //   type: 'doc',
           //   docId: 'protocolsLibrary/overview',
@@ -184,7 +183,7 @@ const config = {
           //   to: '/blog', label: 'Blog', position: 'left'
           // },
           {
-            href: 'https://github.com/servable-community/generator-servable',
+            href: 'https://github.com/servable-community',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
