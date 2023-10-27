@@ -1,8 +1,0 @@
-{
-  "label": "Infrastructure",
-  "position": 20,
-  "link": {
-    "type": "generated-index",
-    "description": "Infrastructure needed to run servable"
-  }
-}

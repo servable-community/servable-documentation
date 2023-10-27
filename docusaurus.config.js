@@ -147,12 +147,12 @@ const config = {
             position: 'right',
             label: 'Reference',
           },
-          {
-            type: 'doc',
-            docId: 'example/overview',
-            position: 'right',
-            label: 'Example',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'example/overview',
+          //   position: 'right',
+          //   label: 'Example',
+          // },
           {
             position: 'right',
             label: 'Protocols Registry',
