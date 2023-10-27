@@ -3,7 +3,7 @@ import React from 'react';
 export default [
   {
     title: 'Tailored for protocols',
-    Svg: require('@site/static/img/noun-bee-4883469.svg').default,//ant
+    Svg: require('@site/static/img/noun-bee-4883469.svg').default,
     description: (
       <>
         Servable is a Node JS framework built on top of Express JS and Parse Server and tailored for protocols. It provides a concise, easy to use and scalable template to get the best of Parse Server and protocols.
