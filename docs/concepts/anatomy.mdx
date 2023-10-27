@@ -1,0 +1,108 @@
+---
+sidebar_position: 1
+---
+
+import SVGComponent from '@site/src/components/generic/svg'
+
+# Anatomy of a Servable app
+
+Servable is a Node JS template that helps orchestrate protocols and their respective classes for the entire lifecycle of a server.
+Servable is built on top of Parse Server and Express JS with the intention to handle protocols along the features Parse Server already serves.
+Servable at its core is a template that works hand in hand with the servable-engine which handles all the heavy lifting of registering protocols, computing classes and their schemas, handling migrations and more.
+
+## Components
+- An Express app
+- A Parse Server instance
+- A Servable Engine
+
+
+<SVGComponent 
+Svg={require('./appstack2.svg').default} />
+
+
+## Project structure
+```bash
+├── lib
+│   ├── index.js
+│   ├── app
+│   │   ├── ...
+│   ├── protocols
+│   │   ├── customProtocolA
+│   │   │   ├── ...
+│   │   ├── customProtocolB
+│   │   │   ├── ...
+├── servable.config.js
+├── .env
+└── package.json
+```
+
+- The servable config is servable.config.js
+- All server code is inside /lib
+- The servable app entry point is lib/index.js
+- The app protocol is in lib/app
+- The local protocols are in lib/protocols
+
+## Protocol structure
+Any protocol respects the following root folder structure:
+
+```bash
+├── beforeInit
+├── afterInit
+├── functions
+├── schema
+├── config
+├── class
+├── classes
+├── seed
+├── jobs
+├── lib
+├── assets
+├── triggers
+├── liveClasses.js
+└── manifest.json
+```
+
+## System design of a full fledged local servable app
+A fully functional servable deployment will use a few other components to run alongside a main servable app.
+These components are installed and run automatically when using the quick start CLI command.
+They are defined in the app protocol system's docker-compose file.
+
+<div className={'bg-red-200 flex p-8'}>
+<SVGComponent 
+Svg={require('./appstack.svg').default} 
+className={`w-full`} 
+role="img" />
+</div>
+
+### Servable app
+The actual servable app
+*Mandatory*
+
+### Servable dashboard
+Servable Dashboard is a standalone dashboard for managing Servable apps.
+- Create, edit and delete schema (not available with Servable)
+- Create, edit and delete security rules (not available with Servable)
+- Create, edit and delete data
+
+[Github](https://github.com/parse-community/parse-dashboard)
+*Optional*
+
+### App database
+The mongodb or PostGreSQL database
+*Mandatory*
+
+### Minio
+*Mandatory*
+An S3 like bucket server for storing files
+
+
+### Utils database
+An utilitary database used by the arbiter to store migration status and current instances
+*Mandatory*
+
+### Redis cache 
+Optional
+
+### Live Query Server
+Optional
+

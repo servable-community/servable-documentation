@@ -5,41 +5,40 @@ sidebar_position: 2
 # Project structure
 
 ```bash
-my-app
 ├── lib
 │   ├── index.js
-│   ├── appprotocol
+│   ├── app
 │   │   │   ├── beforeInit
 │   │   │   ├── afterInit
 │   │   │   ├── functions
 │   │   │   ├── schema
+│   │   │   ├── config
 │   │   │   ├── class
 │   │   │   ├── classes
 │   │   │   ├── seed
 │   │   │   ├── jobs
 │   │   │   ├── lib
+│   │   │   ├── assets
 │   │   │   ├── triggers
 │   │   │   ├── liveClasses.js
-│   ├── config
-│   │   └── index.js
 │   ├── protocols
 │   │   ├── customProtocolA
 │   │   │   ├── beforeInit
 │   │   │   ├── afterInit
 │   │   │   ├── functions
 │   │   │   ├── schema
+│   │   │   ├── config
 │   │   │   ├── class
 │   │   │   ├── classes
 │   │   │   ├── seed
 │   │   │   ├── jobs
 │   │   │   ├── lib
+│   │   │   ├── assets
 │   │   │   ├── triggers
 │   │   │   ├── liveClasses.js
 │   │   ├── customProtocolB
 │   │   │   ├── ...
 ├── servable.config.js
 ├── .env
-├── package.json
-├── README.md
-└── yarn.lock
+└── package.json
 ```
