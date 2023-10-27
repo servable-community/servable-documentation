@@ -21,7 +21,7 @@ export default [
   },
   {
     title: 'Full stack protocols with frontend extensions',
-    Svg: require('@site/static/img/noun-stack-1155174.svg').default,
+    Svg: require('@site/static/img/noun-components-4814706.svg').default,
     description: (
       <>
         Beyond the core server component, a protocol can have an accompanying frontend library that provides UI components and logic. For example the followable protocol offers a React extension that displays a state managed <i>Follow</i> button.
