@@ -11,8 +11,6 @@ The servable engine is responsible for all the Servable related operations on a 
 
 It is available as an npm dependency.
 
-### Custom installation
-
 <BashTabs npm={`npm install -g servable-engine`} />
 
 ## servable-cli
@@ -22,8 +20,6 @@ The servable CLI is responsible for scaffolding and manipulating servable and pr
 It is available as an npm package. It uses under the hood:
 - the Servable engine 
 - the Servable Protocols Registry API
-
-### Custom installation
 
 <BashTabs npm={`npm install -g yo generator-servable`} />
 
