@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Config
@@ -75,6 +75,9 @@ Generator tasks
     - the protocols declaration.
 - The **functions** folder contains cloud functions specific to the class
 - The **triggers** folder contains triggers functions
+
+## Variant entry points
+None
 
 ## Usage
 ### Declare a class

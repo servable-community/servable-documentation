@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 
 # Seed
+
 Servable Automatic Seed is an easy way to seed Servable classes.
 
 Servable Automatic Seed was built from the ground up to respect the protocol lifecycle and separation of concerns. Every protocol can define config entries that drive its behaviour at run time, including the app protocol. The config entries are defined along their conditions and groups in dedicated json files thus guaranteeing an environment agnostic deployment.

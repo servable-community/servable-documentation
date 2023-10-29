@@ -141,12 +141,12 @@ const config = {
           //   position: 'right',
           //   label: 'CLI Commands',
           // },
-          {
-            type: 'doc',
-            docId: 'reference/overview',
-            position: 'right',
-            label: 'Reference',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reference/overview',
+          //   position: 'right',
+          //   label: 'Reference',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'example/overview',
