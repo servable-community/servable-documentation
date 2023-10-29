@@ -17,4 +17,16 @@ When the server is launched, the servable-engine performs the following tasks:
 - Exposes every protocol custom function
 - Registers jobs
 
-#TODO
+
+```mermaid
+graph TD
+    A(Start) --> computeSchema(Compute schema)
+    computeSchema --> launchExpressApp(Launch Express App)
+    launchExpressApp --> beforeInit(Before init)
+    beforeInit --> registerClasses(Register classes)
+    registerClasses --> wireSchema(Wire schema)    
+    wireSchema --> seed(Seed)        
+    seed --> config(Setup config)
+    config --> afterInit(After init)
+    afterInit --> B(App launched)
+```
