@@ -1,0 +1,88 @@
+---
+sidebar_position: 3
+---
+import FolderTree, { testData } from 'react-folder-tree';
+import 'react-folder-tree/dist/style.css';
+import FolderStructure from '@site/src/components/generic/folderStructure'
+
+# Classes
+
+Contains the classes logic handled by the protocol.
+
+## Folder structure
+
+```bash
+├── classes
+│   ├── classA
+│   │   │   ├── class
+│   │   │   │   ├── index.js
+│   │   │   │   ├── protocols.js
+│   │   │   ├── functions
+│   │   │   │   ├── index.js
+│   │   │   ├── triggers
+│   │   │   │   ├── index.js
+```
+
+<FolderStructure
+      data={{
+  name: 'classes',  
+  isOpen: true, 
+  children: [
+    { 
+        name: 'classA',  
+        children: [
+          {
+            name: 'class',            
+            children: [
+              { name: 'index.js',         
+              },
+              { name: 'protocols.js', },
+            ],
+          },
+          {
+            name: 'functions',            
+            children: [
+              { name: 'index.js',         
+              },              
+            ],
+          },
+          {
+            name: 'triggers',            
+            children: [
+              { name: 'index.js',         
+              },              
+            ],
+          },
+        ]
+    },  
+    {
+       name: 'classB',  
+        children: [
+          {
+            name: '...', 
+          }]
+    }  
+  ],
+}}/>
+
+- The **class** folder contains 
+    - the es6 classes handled by the protocol.
+    - the protocols declaration.
+- The **functions** folder contains cloud functions specific to the class
+- The **triggers** folder contains triggers functions
+
+### Declare a class
+
+```js
+export default class ClassA extends Servable.App.Object {
+    constructor() {
+        super('ClassA')
+    }
+}
+
+```
+### Use protocols
+### Use functions
+### Use triggers
+
+## Folder structure

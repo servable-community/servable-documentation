@@ -10,9 +10,7 @@ You can add a protocol to the static protocols array.
 Use the protocol's id in the array of protocols:
 
 ```js
-export default class Blog extends Servable.App.Object {
-
-    static protocols = [
+export default [
         'localable',
         'countryable',
         'taggable',
@@ -37,8 +35,6 @@ export default class Blog extends Servable.App.Object {
         'pageable',
         'followable'
     ]
-...
-}
 ```
 
 ## Use a specific protocol or version

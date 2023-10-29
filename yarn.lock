@@ -8668,6 +8668,15 @@ react-fast-compare@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
+react-folder-tree@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-folder-tree/-/react-folder-tree-5.1.1.tgz#ac578c4b769bee462e2011812636b935eadf5b3a"
+  integrity sha512-lqXSXxaf4KD3abV9W9DXSrGI1YtFxQSGm73jSBU25G7IK0BKfRv8FB+WHm2tTMK637mSnWVBirwt6LsE/Pmq8g==
+  dependencies:
+    prop-types "^15.7.2"
+    react-icons "^4.1.0"
+    use-tree-state "1.0.0"
+
 react-helmet-async@*, react-helmet-async@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-helmet-async/-/react-helmet-async-1.3.0.tgz#7bd5bf8c5c69ea9f02f6083f14ce33ef545c222e"
@@ -8678,6 +8687,11 @@ react-helmet-async@*, react-helmet-async@^1.3.0:
     prop-types "^15.7.2"
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
+
+react-icons@^4.1.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.11.0.tgz#4b0e31c9bfc919608095cc429c4f1846f4d66c65"
+  integrity sha512-V+4khzYcE5EBk/BvcuYRq6V/osf11ODUM2J8hg2FDSswRrGvqiYUYPRy4OdrWaQOBj4NcpJfmHZLNaD+VH0TyA==
 
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
@@ -10370,6 +10384,11 @@ use-sync-external-store@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
+
+use-tree-state@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/use-tree-state/-/use-tree-state-1.0.0.tgz#78e1e629b55faa33e9fef9ee409b383612ff429c"
+  integrity sha512-MEHuUbZWGhekkFCboH0HKOhSHe5zm/l0C+GJdg0+vAuBr42VYmCTO9P2NfQMPU3Gkj7Zys93vtpl/fGReuOi5w==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
