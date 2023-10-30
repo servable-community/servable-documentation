@@ -1,0 +1,51 @@
+---
+sidebar_position: 3
+---
+
+# Classes
+
+## Concept
+Contains the classes logic handled by the protocol.
+
+## Folder structure
+
+```bash
+├── classes
+│   ├── classA
+│   │   │   ├── class
+│   │   │   │   ├── index.js
+│   │   │   │   ├── protocols.js
+│   │   │   ├── functions
+│   │   │   │   ├── index.js
+│   │   │   ├── triggers
+│   │   │   │   ├── index.js
+```
+
+- The **class** folder contains 
+    - the es6 classes handled by the protocol.
+    - the protocols declaration.
+- The **functions** folder contains cloud functions specific to the class
+- The **triggers** folder contains triggers functions
+
+## Usage
+### Declare a class
+
+```js
+export default class ClassA extends Servable.App.Object {
+    constructor() {
+        super('ClassA')
+    }
+}
+```
+### Use protocols
+```js
+export default [
+    //protocolslist 
+]
+```
+
+
+### Use functions
+### Use triggers
+
+## Example

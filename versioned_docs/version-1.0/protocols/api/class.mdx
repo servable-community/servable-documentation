@@ -1,0 +1,86 @@
+---
+sidebar_position: 2
+---
+
+# Class
+
+## Concept
+Allows to define a subclass for this protocol to use other protocols, as to conform to other object classes.
+
+## Folder structure
+
+```bash
+├── class
+│   ├── index.js
+│   ├── protocols.js
+```
+
+- The **class** folder contains 
+    - the es6 classes handled by the protocol.
+    - the protocols declaration.
+
+## Variant entry points
+None
+
+## Usage
+### Declare a class
+
+```js
+export default ({ ParentClass }) => class TargetClass extends ParentClass {
+    disposableOrphans() {
+        const items = super.disposableOrphans ? super.disposableOrphans() : []
+        return [
+            ...items,
+            'wallet'
+        ]
+    }
+
+    disposableChildren() {
+        const items = super.disposableChildren ? super.disposableChildren() : []
+        return [
+            ...items,
+            'wallet'
+        ]
+    }
+}
+```
+### Use protocols
+```js
+export default [
+    //protocolslist 
+]
+```
+[See declaring protocols](../use)
+
+## Example
+We want our protocol **walletable** to use disposableOrphans and disposableChildren to manage data consistency over deletion:
+
+class/index.js
+```js
+export default ({ ParentClass }) => class TargetClass extends ParentClass {   
+
+    disposableOrphans() {
+        const items = super.disposableOrphans ? super.disposableOrphans() : []
+        return [
+            ...items,
+            'wallet'
+        ]
+    }
+
+    disposableChildren() {
+        const items = super.disposableChildren ? super.disposableChildren() : []
+        return [
+            ...items,
+            'wallet'
+        ]
+    }
+}
+``` 
+
+class/protocols.js
+```js
+export default [
+    "disposableorphansable",
+    "disposablechildrenable"
+]
+``` 

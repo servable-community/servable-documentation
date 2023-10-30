@@ -1,0 +1,8 @@
+{
+  "label": "Get Started 🚀",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "All you need to quick start a Servable server."
+  }
+}

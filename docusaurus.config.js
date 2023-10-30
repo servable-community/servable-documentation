@@ -80,6 +80,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // lastVersion: 'current',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -125,10 +126,10 @@ const config = {
           src: 'img/polar-bear.png',
         },
         items: [
-          // {
-          //   type: 'docsVersionDropdown',
-          //   position: 'right',
-          // },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+          },
           {
             type: 'doc',
             docId: 'getstarted/overview',
