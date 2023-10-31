@@ -41,7 +41,7 @@ export default () => {
             {`Everything is a protocol in Servable 🐝 🍯`} <i></i>
           </h2>
           <p className={`text-lg `}>
-            Servable was built from the ground up to use protocols in all ways possible. The <b>Servable app</b> itself is a protocol (app protocol). The Servable engine uses core protocols like manualable.
+            Servable was built from the ground up to use protocols in all ways possible. The <b>Servable app</b> itself is a protocol (app protocol). The Servable engine uses core protocols like <i>manualable</i>, <i>disposableorphans</i> and more.
           </p>
           {/* <div className={``}>
             <Link

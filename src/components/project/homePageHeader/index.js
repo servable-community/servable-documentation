@@ -46,12 +46,12 @@ export default () => {
             <Link
               className="button button--primary button--lg"
               to="/docs/getstarted/quickStart">
-              Quick Start
+              Start
             </Link>
             <Link
               className="button button--secondary button--lg"
               to="/docs/getstarted/overview">
-              Documentation
+              Docs
             </Link>
           </div>
         </div>
