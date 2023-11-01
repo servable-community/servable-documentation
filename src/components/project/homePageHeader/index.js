@@ -38,7 +38,7 @@ export default () => {
             {`${siteConfig.title}`} <i>framework</i>
           </h1>
           <p className={`text-lg `}>
-            A feature driven Node JS framework built on top of Parse Server and tailored for <b>protocols</b>. It provides a concise, easy to use and scalable template to get the best of protocols. Get ready to change the way you code your server!
+            A <b>feature driven</b> Node JS framework built on top of Parse Server and tailored for <b>protocols</b>. It provides a concise, easy to use and scalable template to get the best of protocols. Get ready to change the way you code your server!
             <br />
             🐻 + 🐝🐝🐝
           </p>

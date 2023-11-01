@@ -6,23 +6,30 @@ import BashTabs from '@site/src/components/generic/bashTabs'
 
 # Requirements
 
-## [Node JS](https://nodejs.org/en/download/)
+## All environments
+### [Node JS](https://nodejs.org/en/download/)
 👉 *Version **18.0** or above*
 When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
-👉 *Version #TODO or above*
 
-## [Yeoman](https://yeoman.io)
-👉 *Version #TODO or above*
+## Local environment
+
+### [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+
+### [Yeoman](https://yeoman.io)
 <BashTabs npm={"npm install -g yo"} />
 
-
-## [Docker](https://docs.docker.com/get-docker)
+### [Docker](https://docs.docker.com/get-docker)
 👉 *Version 20.10.0 or above*
 
-## Docker compose
+### Docker compose
 👉 *Version #TODO or above*
 
 The easiest and recommended way to get Docker Compose is to install Docker Desktop. Docker Desktop includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
 [More](https://docs.docker.com/compose/install/)
+
+## Limitations
+
+### Database
+- Servable currently supports MongoDB database while Parse Server supports both MongoDB and PostgreSQL databases.
+- Servable currently needs an additional arbiter database (utils) in all configurations

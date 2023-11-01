@@ -15,7 +15,7 @@ export default [
     Svg: require('@site/static/img/noun-container-1800943.svg').default,
     description: (
       <>
-        A dedicated system entry in every protocol allows for a custom docker-compose based infrastructure needed by the protocol. The Servable engine will automatically assign free ports and run ii.
+        A dedicated system entry in every protocol allows for a custom docker-compose based infrastructure needed by the protocol. The Servable engine will automatically assign free ports and run docker containers if a protocol needs them.
       </>
     ),
   },

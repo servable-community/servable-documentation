@@ -8,7 +8,7 @@ sidebar_position: 3
 Servable config adds the ability to change the behaviour and appearance of your Servable app without  redeploying your server or requiring users to update their app. 
 Parse Server Config is a simple way to set key values and to retrieve them from a client app. It's nevertheless not as complete as Firebase Remote Config for example. Thus Servable Config adds protocol based config with conditions and groups.
 
-Servable Config was built from the ground up to respect the protocol lifecycle and separation of concerns. Every protocol can define config entries that drive its behaviour at run time, including the app protocol. The config entries are defined along their conditions and groups in dedicated json files thus guaranteeing an environment agnostic deployment.
+Servable Config was built from the ground up to respect the protocol lifecycle and separation of concerns. Every protocol can define config entries that drive its behaviour at runtime, including the app protocol. The config entries are defined along their conditions and groups in dedicated json files thus guaranteeing an environment agnostic deployment.
 
 Servable's unique manualable mechanism used for seeds (manualable protocol) allows an hybrid config. You can define initial config entries in json files and manually add new configs or update existing live. Both the updated and new entries will keep their values while new entries in the json files will be taken into account.
 
