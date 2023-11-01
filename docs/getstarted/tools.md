@@ -36,4 +36,4 @@ It serves a public api at api.registry.servablecommunity.com
 
 The servable dashboard is a fork of the Parse Dashboard aimed at providing the best Servable experience.
 
-It is available with the CLI when launching a full fledged local app.
+It is available with the CLI when launching a full-fledged local app.
