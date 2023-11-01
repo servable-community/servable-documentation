@@ -35,7 +35,7 @@ export default () => {
           max-w-md
         `}>
           <h1 className='text-6xl'>
-            {`${siteConfig.title}`} <i>framework</i>
+            {`${siteConfig.title}`} <i className='text-gray-600 dark:text-gray-400'>framework</i>
           </h1>
           <p className={`text-lg `}>
             A <b>feature driven</b> Node JS framework built on top of Parse Server and tailored for <b>protocols</b>. It provides a concise, easy to use and scalable template to get the best of protocols. Get ready to change the way you code your server!
@@ -46,7 +46,7 @@ export default () => {
             <Link
               className="button button--primary button--lg"
               to="/docs/getstarted/quickStart">
-              Start
+              Quick Start
             </Link>
             <Link
               className="button button--secondary button--lg"
