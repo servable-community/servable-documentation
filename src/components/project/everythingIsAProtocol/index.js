@@ -46,7 +46,7 @@ export default () => {
           {/* <div className={``}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/getstarted/overview">
+              to="/docs/gettingstarted/overview">
               Documentation
             </Link>
           </div> */}

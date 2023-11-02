@@ -5,7 +5,7 @@ import BashTabs from '@site/src/components/generic/bashTabs'
 
 # Components & Tools
 
-## Servable Engine
+## [Servable Engine](https://github.com/servable-community/servable-engine)
 
 The servable engine is responsible for all the Servable related operations on a servable template project.
 
@@ -13,7 +13,7 @@ It is available as an npm dependency.
 
 <BashTabs npm={`npm install -g servable-engine`} />
 
-## Servable CLI (yeoman generator)
+## [Servable CLI (yeoman generator)](https://github.com/servable-community/generator-servable)
 
 The servable CLI is responsible for scaffolding and manipulating servable and protocol projects.
 
@@ -24,7 +24,7 @@ It is available as an npm package. It uses under the hood:
 <BashTabs npm={`npm install -g yo generator-servable`} />
 
 
-## Servable Registry
+## [Servable Registry](https://registry.servablecommunity.com)
 
 The servable protocols registry is a centralized  protocols repository.
 

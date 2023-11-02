@@ -45,12 +45,12 @@ export default () => {
           <div className={`grid grid-cols-2 space-x-6`}>
             <Link
               className="button button--primary button--lg"
-              to="/docs/getstarted/quickStart">
+              to="/docs/quickStart">
               Quick Start
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/getstarted/overview">
+              to="/docs/gettingstarted/overview">
               Docs
             </Link>
           </div>
