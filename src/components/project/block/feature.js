@@ -11,7 +11,7 @@ export default ({ Svg, title, description }) => {
         <Svg
           fill={`${isDarkTheme ? 'white' : 'black'}`}
           className={` 
-          p-6         
+          p-10
           w-[180px]
           h-[180px]`}
           role="img" />
