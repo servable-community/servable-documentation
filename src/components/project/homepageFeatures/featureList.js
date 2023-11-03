@@ -12,7 +12,7 @@ export default [
   },
   {
     title: 'Perfect separation of concerns',
-    Svg: require('@site/static/img/beeswarm.svg').default,
+    Svg: require('@site/static/img/noun-stack-1155174.svg').default,
     description: (
       <>
         Servable streamlines the server development by separating every "groupable" logic to be a protocol, so that it is naturally extracted from the base code and possibly migrated into its own package
@@ -21,7 +21,7 @@ export default [
   },
   {
     title: 'Use community protocols',
-    Svg: require('@site/static/img/noun-abstract-pattern-165721.svg').default,
+    Svg: require('@site/static/img/beeswarm.svg').default,
     description: (
       <>
         Extend your server by using protoocols made by the community. Add emailing, versionning, or video capacity with one simple declaration. Handle schema migrations and rollbacks automatically.
