@@ -28,6 +28,7 @@
     "docusaurus-plugin-matomo": "^0.0.6",
     "docusaurus-plugin-openapi-docs": "^1.5.2",
     "docusaurus-theme-openapi-docs": "^1.6.0",
+    "dotenv": "^16.3.1",
     "lottie-react": "^2.4.0",
     "npm-to-yarn": "^2.0.0",
     "postcss": "^8.4.21",
