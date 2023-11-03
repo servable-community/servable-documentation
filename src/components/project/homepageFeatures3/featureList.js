@@ -12,7 +12,7 @@ export default [
   },
   {
     title: 'Ready to run with docker dependencies per protocol',
-    Svg: require('@site/static/img/noun-container-1800943.svg').default,
+    Svg: require('@site/static/img/noun-boxes-4275784.svg').default,
     description: (
       <>
         A dedicated system entry in every protocol allows for a custom docker-compose based infrastructure needed by the protocol. The Servable engine will automatically assign free ports and run docker containers if a protocol needs them.
@@ -21,7 +21,7 @@ export default [
   },
   {
     title: 'Full stack protocols with frontend extensions',
-    Svg: require('@site/static/img/noun-components-4814706.svg').default,
+    Svg: require('@site/static/img/noun-shapes-6104255.svg').default,
     description: (
       <>
         Beyond the core server component, a protocol can have an accompanying frontend library that provides UI components and logic. For example the followable protocol offers a React extension that displays a state managed <i>Follow</i> button.
