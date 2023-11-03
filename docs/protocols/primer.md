@@ -4,9 +4,10 @@ sidebar_position: 1
 
 # Primer - What is a protocol?
 
+***An object oriented programming perspective*** <br />
 In many object oriented programming language a protocol describes what an unknown type of object can do. The same way a Servable protocol describes what an unknown database object can do. 
 
-A protocol always applies to a class, which is the Servable representation of a database table. 
+A protocol always applies to a class, which is the Servable representation of a database table.
 
 By applying a protocol to a class we make it conform to the the protocol's schema, meaning the class' schema will be updated to include the extra fields the protocol needs to work. Even more, the protocol listens to all the events (triggers) sent to the class (beforeSave, afterSave, beforeDelete, afterDelete, ...) so that the class' behavior conforms to the protocol's behavior. The protocol does not cancel the class' own desired behavior, it gets executed in a chain alongside all the class' protocols triggers.
 
