@@ -15,7 +15,7 @@ require('dotenv').config()
 const config = {
   title: 'Servable',
   tagline: 'A protocol oriented Node JS framework',
-  url: 'https://servablecommunity.com',
+  url: 'https://documentation.servablecommunity.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -117,7 +117,7 @@ const config = {
     ({
       matomo: {
         matomoUrl: (process.env.MATOMO_URL && process.env.MATOMO_URL.length) ? process.env.MATOMO_URL : 'https://your.matomo.instance/',
-        siteId: process.env.MATOMO_SITE_ID ? process.env.MATOMO_SITE_ID : 'ID',
+        siteId: (process.env.MATOMO_SITE_ID && process.env.MATOMO_SITE_ID.length) ? process.env.MATOMO_SITE_ID : 'ID',
         phpLoader: 'matomo.php',
         jsLoader: 'matomo.js',
       },
