@@ -25,7 +25,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);  
   --ifm-font-family-base: 'Space Grotesk';  
-  --ifm-footer-background-color: #faf3dd;
+  --ifm-footer-background-color:  #fff;  /*#faf3dd;*/
   --ifm-navbar-background-color: #fff;  /*#faf3dd;*/
   --ifm-font-color-base: #323232;  
 }

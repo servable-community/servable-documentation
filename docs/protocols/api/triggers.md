@@ -11,15 +11,18 @@ Contains the .
 
 ```bash
 ├── triggers
-│   ├── index.js
+│   ├── beforeSave.js
+│   ├── afterSave.js
+│   ├── beforeDelete.js
+│   ├── afterDelete.js
+│   ├── beforeFind.js
+│   ├── afterFind.js
 ```
 
 - The **index.js** (or **triggers.js**) exports the triggers functions 
 
 ## Variant entry points
-```bash
-├── triggers.js
-```
+None
 
 ## Usage
 
@@ -39,7 +42,7 @@ Request content:
 ### Before save
 
 ```js
-export const beforeSave = async (props) => {
+export default async (props) => {
     const { request } = props
     const { object } = request   
 }
@@ -48,7 +51,7 @@ export const beforeSave = async (props) => {
 ### After save
 
 ```js
-export const afterSave = async (props) => {
+export default async (props) => {
     const { request } = props
     const { object } = request   
 }
@@ -57,7 +60,7 @@ export const afterSave = async (props) => {
 ### Before delete
 
 ```js
-export const beforeDelete = async (props) => {
+export default async (props) => {
     const { request } = props
     const { object } = request   
 }
@@ -66,7 +69,7 @@ export const beforeDelete = async (props) => {
 ### After delete
 
 ```js
-export const afterDelete = async (props) => {
+export default async (props) => {
     const { request } = props
     const { object } = request   
 }
@@ -79,8 +82,8 @@ The *disposablechildrenable* protocol
 
 ```js
 import _ from 'underscore'
-
-export const afterSave = async ({ request }) => {
+//afterSave.js
+export default async ({ request }) => {
     const { object, original, context } = request
 
     if (!object || !object.disposableChildren) {
