@@ -48,6 +48,5 @@ upload_to_cdn:
   before_script:
     - mc alias set cdn $MINIO_HOST $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
   script:        
-    - mc ls cdn    
-    # - mc cp --r public cdn/assets/public
+    - mc ls cdn   
     - mc cp --r docs cdn/assets    
