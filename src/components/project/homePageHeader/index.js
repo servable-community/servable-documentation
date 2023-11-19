@@ -57,5 +57,8 @@ export default () => {
         </div>
       </div>
     </div>
+            
+{/* <Widget protocolId={'emailable'} /> */}
+
   </div>
 }

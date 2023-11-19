@@ -10,6 +10,7 @@ variables:
 stages:
   # - test
   - build
+  - deploy
 
 # run_tests:
 #   stage: test
@@ -34,3 +35,19 @@ build_image:
   script:
     - DOCKER_BUILDKIT=1 docker build -t $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
     - docker push $CI_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
+
+
+# https://hub.docker.com/r/minio/mc/
+upload_to_cdn:
+  stage: deploy
+  only:    
+    - main
+  image:
+    name: minio/mc
+    entrypoint: ['']
+  before_script:
+    - mc alias set cdn $MINIO_HOST $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+  script:        
+    - mc ls cdn    
+    # - mc cp --r public cdn/assets/public
+    - mc cp --r docs cdn/assets    
