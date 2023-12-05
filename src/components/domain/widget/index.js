@@ -3,7 +3,7 @@ import React from "react"
 
 export default props => {
     const { protocolId, size = 's' } = props
-    return <div className="">        
+    return <div>        
             <div id={protocolId}
                 data-protocolid={protocolId}
                 data-size={size}

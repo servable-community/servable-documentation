@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# manifest
-Protocol's manifest.
+# index
+Protocol's index.
 
 :::info Path
-**/manifest.json**
+**/index.json**
 :::
 
 ## Values

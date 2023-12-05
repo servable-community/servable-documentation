@@ -40,7 +40,7 @@ export default () => {
           <p className={`text-lg `}>
             A <b>feature driven</b> Node JS framework built on top of Parse Server and tailored for <b>protocols</b>. It provides a concise, easy to use and scalable template to get the best of protocols. Get ready to change the way you code your server!
             <br />
-            🐻 + 🐝🐝🐝
+            Classes 🌸🌸🌸🌸🌸🌸 → Protocols 🐝🐝🐝 → Servable 🐻 = 🍯
           </p>
           <div className={`grid grid-cols-2 space-x-6`}>
             <Link

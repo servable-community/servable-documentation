@@ -20,5 +20,5 @@ Any protocol respects the following root folder structure:
 ├── assets
 ├── triggers
 ├── liveClasses.js
-└── manifest.json
+└── index.json
 ```

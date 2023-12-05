@@ -19,6 +19,7 @@ Any protocol respects the following root folder structure:
 ├── lib
 ├── assets
 ├── triggers
+├── documentation
 ├── liveClasses.js
-└── manifest.json
+└── index.json
 ```
