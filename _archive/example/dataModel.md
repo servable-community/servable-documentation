@@ -36,6 +36,20 @@ The **Excerpt** class will also be central to our application as it allows a fin
 As we can see the **Book** and the **Excerpt** classes share the same behaviour for basic social interactions. We will naturally extract these functionalities into **protocols** from the get-go.
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#fff',
+      'primaryTextColor': '#323232',
+      'primaryBorderColor': '#323232',
+      'lineColor': '#323232',
+      'secondaryColor': '#e76f51',
+      'tertiaryColor': '#e76f51',
+      'fontFamily': 'Space Grotesk' 
+    }
+  }
+}%%
 erDiagram
     BOOK ||--o{ EXCERPT : contains
     BOOK {
@@ -74,6 +88,20 @@ For an author:
 These fields are special to the Booklover application, we don't intend to move them onto a dedicated protocol yet. They will sit within the app protocol.
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#fff',
+      'primaryTextColor': '#323232',
+      'primaryBorderColor': '#323232',
+      'lineColor': '#323232',
+      'secondaryColor': '#e76f51',
+      'tertiaryColor': '#e76f51',
+      'fontFamily': 'Space Grotesk' 
+    }
+  }
+}%%
 ---
 title: Book
 ---

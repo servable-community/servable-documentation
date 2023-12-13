@@ -19,6 +19,20 @@ When the server is launched, the servable-engine performs the following tasks:
 
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#fff',
+      'primaryTextColor': '#323232',
+      'primaryBorderColor': '#323232',
+      'lineColor': '#323232',
+      'secondaryColor': '#e76f51',
+      'tertiaryColor': '#e76f51',
+      'fontFamily': 'Space Grotesk' 
+    }
+  }
+}%%
 graph TD
     A(Start) --> computeSchema(Compute schema)
     computeSchema --> launchExpressApp(Launch Express App)

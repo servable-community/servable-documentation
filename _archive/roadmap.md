@@ -7,6 +7,20 @@ sidebar_position: 6
 ![logo](/img/icon.svg)
 Ongoing
 ```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#fff',
+      'primaryTextColor': '#323232',
+      'primaryBorderColor': '#323232',
+      'lineColor': '#323232',
+      'secondaryColor': '#e76f51',
+      'tertiaryColor': '#e76f51',
+      'fontFamily': 'Space Grotesk' 
+    }
+  }
+}%%
 %%{init: { 'logLevel': 'debug', 'theme': 'dark' } }%%
     timeline        
         June 2023 : Version 0.1 with Protocols 0.1. Heavy Parse Server references

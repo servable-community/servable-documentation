@@ -12,6 +12,20 @@ This configuration is still experimental
 A staging configuration is helpful when you want to test a schema migration on a staging database without touching the production database. It is an extra protection you can put in your production code.
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#fff',
+      'primaryTextColor': '#323232',
+      'primaryBorderColor': '#323232',
+      'lineColor': '#323232',
+      'secondaryColor': '#e76f51',
+      'tertiaryColor': '#e76f51',
+      'fontFamily': 'Space Grotesk' 
+    }
+  }
+}%%
 flowchart TD
     start([Launch Servable]) --> requiresMigration{A protocol requires migration?} 
     requiresMigration -- Yes --> migrate[Migrate every protocol that requires migration]
