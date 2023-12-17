@@ -1,6 +1,7 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 // import LogoAnimated from '../logo/animated'
+import Link from '@docusaurus/Link'
 
 export default () => {
   const { siteConfig } = useDocusaurusContext()
@@ -10,8 +11,7 @@ export default () => {
         
         px-6
         md:px-6      
-        pt-6
-        `}>
+        pt-6`}>
       <div class={`
           text-right
           flex
@@ -38,10 +38,17 @@ export default () => {
           max-w-4xl
         `}>
           <h2 className='text-4xl'>
-            {`Everything is a protocol in Servable 🐝 🍯`} <i></i>
+          {`Introducing framework pollination 🐝 🍯`} <i></i>
           </h2>
           <p className={`text-lg `}>
-            Servable was built from the ground up to use protocols in all ways possible. The <b>Servable app</b> itself is a protocol (app protocol). The Servable engine uses core protocols like <i>manualable</i>, <i>disposableorphans</i> and more.
+            Servable is not a traditional Node JS framework as it does not expose any api or route by itself, nor does it contain any server capacity. Instead it pollinates database tables (classes) with protocols (independent and agnostic feature oriented extensions) so that a traditional Node JS framework (adapted by a framework adapter) can use them.
+          </p>
+          <p>
+          <Link
+              className="button button--secondary button--md"
+              to="/docs/quickStart">
+              Learn more about pollination framework
+            </Link>
           </p>
           {/* <div className={``}>
             <Link

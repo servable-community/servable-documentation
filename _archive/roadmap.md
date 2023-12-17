@@ -15,9 +15,7 @@ Ongoing
       'primaryTextColor': '#323232',
       'primaryBorderColor': '#323232',
       'lineColor': '#323232',
-      'secondaryColor': '#e76f51',
-      'tertiaryColor': '#e76f51',
-      'fontFamily': 'Space Grotesk' 
+      'fontFamily': 'Space Grotesk'
     }
   }
 }%%

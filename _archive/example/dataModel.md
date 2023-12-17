@@ -44,9 +44,7 @@ As we can see the **Book** and the **Excerpt** classes share the same behaviour 
       'primaryTextColor': '#323232',
       'primaryBorderColor': '#323232',
       'lineColor': '#323232',
-      'secondaryColor': '#e76f51',
-      'tertiaryColor': '#e76f51',
-      'fontFamily': 'Space Grotesk' 
+      'fontFamily': 'Space Grotesk'
     }
   }
 }%%
@@ -96,9 +94,7 @@ These fields are special to the Booklover application, we don't intend to move t
       'primaryTextColor': '#323232',
       'primaryBorderColor': '#323232',
       'lineColor': '#323232',
-      'secondaryColor': '#e76f51',
-      'tertiaryColor': '#e76f51',
-      'fontFamily': 'Space Grotesk' 
+      'fontFamily': 'Space Grotesk'
     }
   }
 }%%
