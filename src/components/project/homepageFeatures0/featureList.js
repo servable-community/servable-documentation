@@ -21,7 +21,7 @@ export default [
   },
   {
     title: 'Use community framework adapters',
-    Svg: require('@site/static/img/dots.svg').default,
+    Svg: require('@site/static/img/noun-butterfly-6382345.svg').default,
     description: (
       <>
         Extend your server by using protoocols made by the community. Add emailing, versionning, or video capacity with one simple declaration. Handle schema migrations and rollbacks automatically.
