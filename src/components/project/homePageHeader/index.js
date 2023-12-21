@@ -50,7 +50,7 @@ export default () => {
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/gettingstarted/overview">
+              to="/docs/guides/gettingstarted/overview">
               Docs
             </Link>
           </div>

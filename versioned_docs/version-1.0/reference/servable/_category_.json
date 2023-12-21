@@ -1,6 +1,6 @@
 {
-  "label": "API",
-  "position": 6,
+  "label": "Servable",
+  "position": 0,
   "link": {
     "type": "generated-index",
     "description": "Protocols features"

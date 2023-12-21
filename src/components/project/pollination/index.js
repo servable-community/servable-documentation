@@ -46,14 +46,14 @@ export default () => {
           <p>
           <Link
               className="button button--secondary button--md"
-              to="/docs/servable/pollination">
+              to="/docs/guides/servable/pollination">
               Learn more about pollination framework
             </Link>
           </p>
           {/* <div className={``}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/gettingstarted/overview">
+              to="/docs/guides/gettingstarted/overview">
               Documentation
             </Link>
           </div> */}

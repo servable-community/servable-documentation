@@ -146,9 +146,15 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'gettingstarted/overview',
+            docId: 'guides/gettingstarted/overview',
             position: 'right',
-            label: 'Documentation',
+            label: 'Guides',
+          },
+          {
+            type: 'doc',
+            docId: 'guides/gettingstarted/overview',
+            position: 'right',
+            label: 'Reference',
           },
           // {
           //   type: 'doc',
@@ -170,7 +176,7 @@ const config = {
           // },
           {
             position: 'right',
-            label: 'Protocols Registry',
+            label: 'Registry',
             href: 'https://registry.servablecommunity.com',
           },
           // {
@@ -216,7 +222,7 @@ const config = {
           //   items: [
           //     {
           //       label: 'Guides',
-          //       to: '/docs/gettingstarted/overview',
+          //       to: '/docs/guides/gettingstarted/overview',
           //     },
           //   ],
           // },
