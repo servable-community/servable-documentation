@@ -2,11 +2,12 @@ import { Helmet } from "react-helmet"
 import React from "react"
 
 export default props => {
-    const { protocolId, size = 's' } = props
+    const { protocolId, size = 's', mode="default" } = props
     return <div className="mb-6">        
             <div id={protocolId}
                 data-protocolid={protocolId}
                 data-size={size}
+                data-mode={mode}
                 class="servable-protocol-widget"
             // style="width: 250px; margin: auto; margin-top: 20px"
             >

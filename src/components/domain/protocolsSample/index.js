@@ -46,13 +46,13 @@ export default props => {
           <div className="
     mb-6 
     flex
-    space-x-4 
+    space-x-5 
     px-4
     
     justify-center
           ">        
-        <Widget protocolId={'@servable-community/cassable'} />
-        <Widget protocolId={'@servable-community/cassable'} />        
+        <Widget protocolId={'@servable-community/cassable'} mode="minimal" />
+        <Widget protocolId={'@servable-community/cassable'} mode="minimal"/>        
     </div>
         </div>
       </div>

@@ -7,18 +7,19 @@ sidebar_position: 2
 Any protocol respects the following root folder structure:
 
 ```bash
-├── beforeInit
-├── afterInit
+├── beforeinit
+├── afterinit
 ├── functions
 ├── schema
 ├── config
 ├── class
 ├── classes
-├── seed
 ├── jobs
+├── seed
 ├── lib
 ├── assets
 ├── triggers
-├── liveClasses.js
+├── documentation
+├── liveclasses.js
 └── index.json
 ```

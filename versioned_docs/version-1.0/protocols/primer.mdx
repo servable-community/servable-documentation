@@ -1,12 +1,14 @@
 ---
 sidebar_position: 1
 ---
+import Widget from '@site/src/components/domain/widget'
 
 # Primer - What is a protocol?
 
+***An object oriented programming perspective*** <br />
 In many object oriented programming language a protocol describes what an unknown type of object can do. The same way a Servable protocol describes what an unknown database object can do. 
 
-A protocol always applies to a class, which is the Servable representation of a database table. 
+A protocol always applies to a class, which is the Servable representation of a database table.
 
 By applying a protocol to a class we make it conform to the the protocol's schema, meaning the class' schema will be updated to include the extra fields the protocol needs to work. Even more, the protocol listens to all the events (triggers) sent to the class (beforeSave, afterSave, beforeDelete, afterDelete, ...) so that the class' behavior conforms to the protocol's behavior. The protocol does not cancel the class' own desired behavior, it gets executed in a chain alongside all the class' protocols triggers.
 
@@ -39,6 +41,13 @@ A protocol does not stop at the server. Some protocols have a client counterpart
 By making an object Commentable, you're adding not only database fields and server methods to it, you are also taking advantage of a front library made for its capacity.
 
 
+<div className=''>
+<Widget protocolId={'@servable-community/cassable'} />
+</div>
+<div className='mt-10'>
+    <Widget protocolId={'publish@servable-community/cassableable'} size={'m'} />
+</div>
+
 ## Lifecycle
 ```mermaid
 %%{
@@ -49,7 +58,7 @@ By making an object Commentable, you're adding not only database fields and serv
       'primaryTextColor': '#323232',
       'primaryBorderColor': '#323232',
       'lineColor': '#323232',
-      'fontFamily': 'Space Grotesk'
+      'fontFamily': 'Space Grotesk'       
     }
   }
 }%%

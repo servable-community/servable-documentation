@@ -2,6 +2,7 @@
 sidebar_position: 7
 ---
 import BashTabs from '@site/src/components/generic/bashTabs'
+import Widget from '@site/src/components/domain/widget'
 
 # Components & Tools
 
@@ -12,6 +13,18 @@ The servable engine is responsible for all the Servable related operations on a 
 It is available as an npm dependency.
 
 <BashTabs npm={`npm install -g servable-engine`} />
+
+## [Servable Manifest](https://github.com/servable-community/servable-manifest)
+
+The Servable manifest is a utility that builds a protocol's manifest and documents it.
+It is available as an npm dependency.
+
+<BashTabs npm={`npm install -g servable-manifest`} />
+
+## [Servable Parse Server Adapter](https://github.com/servable-community/parse-server-adapter)
+
+The Servable Parse Server Adapter is an example of a framework adapter.
+<BashTabs npm={`npm install @servable/parse-server-adapter`} />
 
 ## [Servable CLI (yeoman generator)](https://github.com/servable-community/generator-servable)
 
@@ -37,3 +50,10 @@ It serves a public api at api.registry.servablecommunity.com
 The servable dashboard is a fork of the Parse Dashboard aimed at providing the best Servable experience.
 
 It is available with the CLI when launching a full-fledged local app.
+
+## Servable Widgets
+
+Servable widgets are embeddable React components that can display a protocol for example.
+
+<Widget protocolId={'@servable-community/cassable'} />
+<Widget protocolId={'@servable-community/cassable'} size={'m'}/>
