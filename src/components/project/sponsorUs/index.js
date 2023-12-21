@@ -39,7 +39,7 @@ export default () => {
           <div className={``}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/guides/sponsorship">
+              to="/docs/sponsorship">
               Be a sponsor
             </Link>
           </div>
