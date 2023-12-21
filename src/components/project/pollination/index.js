@@ -46,7 +46,7 @@ export default () => {
           <p>
           <Link
               className="button button--secondary button--md"
-              to="/docs/quickStart">
+              to="/docs/servable/pollination">
               Learn more about pollination framework
             </Link>
           </p>

@@ -6,12 +6,14 @@ export default ({ Svg, title, description }) => {
   const { isDarkTheme } = useColorMode()
 
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4 mb-16 md:mb-0')}>
       <div className="text--center">
         <Svg
           fill={`${isDarkTheme ? 'white' : 'black'}`}
-          className={` 
-          p-10
+          className={`           
+          pb-0
+          md:pb-10          
+          px-10
           w-[180px]
           h-[180px]`}
           role="img" />

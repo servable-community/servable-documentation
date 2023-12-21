@@ -11,6 +11,7 @@ import HomepageFeatures3 from '../components/project/homepageFeatures3'
 import HomepageFeatures4 from '../components/project/homepageFeatures4'
 import EverythingIsAProtocol from '../components/project/everythingIsAProtocol'
 import Pollination from '../components/project/pollination'
+import ProtocolsSample from '../components/domain/protocolsSample'
 export default () => {
   const { siteConfig } = useDocusaurusContext()
   return (
@@ -22,6 +23,7 @@ export default () => {
       <main className='pb-16'>
         <Pollination />
         <HomepageFeatures0 />
+        <ProtocolsSample />
         <EverythingIsAProtocol />
         <HomepageFeatures />
         <HomepageFeatures2 />
