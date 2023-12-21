@@ -11,26 +11,25 @@ export default () => {
         `}>
     <div class={`       
         px-6
-        md:px-6      
+        md:px-6
         py-4`}>
       <div class={`
-          
           flex
-          justify-center      
-          align-middle                          
+          justify-center
+          align-middle
         `}>
         {/* <LogoAnimated /> */}
         <LogoStatic size={'s'} />
       </div>
       <div class={`                
           flex
-          justify-center       
+          justify-center
           pt-2
         `}>
         <div class={`
           justify-center
-          text-center           
-          max-w-lg                 
+          text-center
+          max-w-lg
         `}>
           <h2 className=''>{`Sponsor us`}</h2>
           <p className={``}>
