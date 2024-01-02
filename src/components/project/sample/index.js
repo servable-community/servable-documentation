@@ -11,11 +11,11 @@ export default () => {
     <div class={`          
           justify-center      
           align-middle                
-          max-w-md
+          max-w-xl
         `}>
       <h2>{`Quick start`}</h2>
       <p className={``}>
-        <BashTabs npm={`npm install -g yo generator-servable  \nyo servable -q -t app -n MyApp \nnpm run start`} />
+        <BashTabs npm={`npx @servable/cli app new -n MyApp --quick --install\nnpm run start`} />
       </p>
     </div>
   </div>

@@ -3,7 +3,7 @@
 > [!WARNING]
 > Servable is still experimental and its api may change in the future.
 
-Servable documentation source code for [https://documentation.servable.app](https://documentation.servable.app)
+Servable documentation source code for [https://docs.servable.app](https://docs.servable.app)
 
 ![logo](/static/img/polar-bear-4.png)
 

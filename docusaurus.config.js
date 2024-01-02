@@ -15,7 +15,7 @@ require('dotenv').config()
 const config = {
   title: 'Servable',
   tagline: 'A protocol oriented Node JS framework',
-  url: 'https://documentation.servablecommunity.com',
+  url: 'https://docs.servable.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -48,14 +48,14 @@ const config = {
     // [
     //   'docusaurus-plugin-openapi-docs',
     //   {
-    //     id: "apiDocs",
-    //     docsPluginId: "classic",
+    //     id: "api", // plugin id
+    //     docsPluginId: "classic", // id of plugin-content-docs or preset for rendering docs
     //     config: {
-    //       petstore: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-    //         specPath: "examples/petstore.yaml", // Path to designated spec file
-    //         outputDir: "api/petstore", // Output directory for generated .mdx docs
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag",
+    //       petstore: { // the <id> referenced when running CLI commands
+    //         specPath: "apis/petstore.yaml", // path to OpenAPI spec, URLs supported
+    //         outputDir: "api/petstore", // output directory for generated files
+    //         sidebarOptions: { // optional, instructs plugin to generate sidebar.js
+    //           groupPathsBy: "tag", // group sidebar items by operation "tag"
     //         },
     //       },
     //       burgers: {
@@ -64,7 +64,7 @@ const config = {
     //       }
     //     }
     //   },
-    // ]
+    // ]   
   ],
   markdown: {
     mermaid: true,
@@ -98,6 +98,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/servable-community/generator-servable/tree/main/packages/create-docusaurus/templates/shared/',
+          // docLayoutComponent: "@theme/DocPage",
+          // docItemComponent: "@theme/ApiItem" // derived from docusaurus-theme-openapi-docs
         },
         blog: {
           showReadingTime: true,
@@ -118,7 +120,7 @@ const config = {
       matomo: {
         // matomoUrl: (process.env.MATOMO_URL && process.env.MATOMO_URL.length) ? process.env.MATOMO_URL : 'https://your.matomo.instance/',
         // siteId: (process.env.MATOMO_SITE_ID && process.env.MATOMO_SITE_ID.length) ? process.env.MATOMO_SITE_ID : 'ID',
-        matomoUrl: "https://matomo.servablecommunity.com/",
+        matomoUrl: "https://matomo.servable.app/",
         siteId: 1,
         phpLoader: 'matomo.php',
         jsLoader: 'matomo.js',
@@ -174,11 +176,11 @@ const config = {
           //   position: 'right',
           //   label: 'Example',
           // },
-          {
-            position: 'right',
-            label: 'Registry',
-            href: 'https://registry.servablecommunity.com',
-          },
+          // {
+          //   position: 'right',
+          //   label: 'Registry',
+          //   href: 'https://registry.servable.app',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'protocolsLibrary/overview',
