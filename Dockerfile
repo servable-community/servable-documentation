@@ -2,7 +2,7 @@
 # Build step
 # https://dev.to/cindyledev/how-to-dockerize-a-docusaurus-v2-application-fp7#comment-22np8
 
-FROM node:16 AS build
+FROM node:18 AS build
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN yarn
