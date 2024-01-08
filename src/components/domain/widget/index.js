@@ -16,8 +16,8 @@ export default props => {
         <Helmet>
             {/* <link href={process.env.WIDGETS_STYLE_URL} rel="stylesheet" />
             <script async src={process.env.WIDGETS_JS_URL}></script> */}
-            <link href="https://cdn.registry.servable.app/widgets/protocol/index.css" rel="stylesheet" />
-            <script async src="https://cdn.registry.servable.app/widgets/protocol/index.js"></script>
+            <link href="https://cdn.servable.app/widgets/protocol/index.css" rel="stylesheet" />
+            <script async src="https://cdn.servable.app/widgets/protocol/index.js"></script>
             {/* <link href="http://localhost:3080/widget/index.css" rel="stylesheet" />
             <script async src="http://localhost:3080/widget/index.js"></script> */}
         </Helmet>

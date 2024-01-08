@@ -179,7 +179,7 @@ const config = {
           // {
           //   position: 'right',
           //   label: 'Registry',
-          //   href: 'https://registry.servable.app',
+          //   href: 'https://servable.app',
           // },
           // {
           //   type: 'doc',
