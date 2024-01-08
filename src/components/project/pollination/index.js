@@ -38,13 +38,13 @@ export default () => {
           max-w-4xl
         `}>
           <h2 className='text-4xl'>
-          {`Introducing framework pollination 🐝 🍯`} <i></i>
+            {`Introducing framework pollination 🐝 🍯`} <i></i>
           </h2>
           <p className={`text-lg `}>
-            Servable is not a traditional Node JS framework as it does not expose any api or route by itself, nor does it contain any server capacity. Instead it pollinates database tables (classes) with protocols (independent and agnostic feature oriented extensions) so that a traditional Node JS framework (adapted by a framework adapter) can use them.
+            Servable is not a traditional Node JS framework as it does not expose any api or route by itself, nor does it contain any server capacity. Instead it pollinates database tables (classes) with protocols (independent and agnostic feature oriented extensions) so that a traditional Node JS framework (adapted by a framework bridge) can use them.
           </p>
           <p>
-          <Link
+            <Link
               className="button button--secondary button--md"
               to="/docs/guides/servable/pollination">
               Learn more about pollination framework

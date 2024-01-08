@@ -6,7 +6,7 @@ export default [
     Svg: require('@site/static/img/noun-build-3738502.svg').default,
     description: (
       <>
-        Using framework adapters you can keep the logic of your codebase the same. A hive adapts any Node JS framework to be used in Servable without changing the app.
+        Using framework bridges you can keep the logic of your codebase the same. A hive adapts any Node JS framework to be used in Servable without changing the app.
       </>
     ),
   },
@@ -20,7 +20,7 @@ export default [
     ),
   },
   {
-    title: 'Use community framework adapters',
+    title: 'Use community framework bridges',
     Svg: require('@site/static/img/noun-farm-1566418.svg').default,
     description: (
       <>

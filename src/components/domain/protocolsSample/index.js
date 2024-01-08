@@ -51,7 +51,7 @@ export default props => {
     
     justify-center
           ">        
-        <Widget protocolId={'@servable-community/cassable'} mode="minimal" />
+        <Widget protocolId={'@servable-community/shipable'} mode="minimal" />
         <Widget protocolId={'@servable-community/cassable'} mode="minimal"/>        
     </div>
         </div>
